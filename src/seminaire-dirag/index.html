@@ -341,7 +341,12 @@
 
   <p class="date">28 mai 2024</p>
 </section>
-<section id="introduction" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<section>
+<section id="introduction" class="title-slide slide level1 center" data-background-image="background.svg" data-background-size="contain">
+<h1>Introduction</h1>
+
+</section>
+<section id="introduction-1" class="slide level2" data-background-image="background.svg" data-background-size="contain">
 <h2>Introduction</h2>
 <ul>
 <li><p>Contexte et origine du projet -&gt; pourquoi on a créé cette equipe de ouf 1er stage Quentin puis groupe avec DOM puis 2 stagiaires assez nulles puis reprise septembre 2023 + dernier stagios depuis mars -&gt; Now MAI 2024 fin expérimentation</p></li>
@@ -349,38 +354,124 @@
 Etude consommation d’espace</p></li>
 </ul>
 <p>Thomas / Clement</p>
+</section></section>
+<section>
+<section id="images-satellitaires" class="title-slide slide level1 center" data-background-image="background.svg" data-background-size="contain">
+<h1>Images satellitaires</h1>
+
 </section>
-<section id="données" class="slide level2" data-background-image="background.svg" data-background-size="contain">
-<h2>Données</h2>
+<section id="quest-ce-quune-image" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>Qu’est-ce qu’une image ?</h2>
+<p>Une image en couleurs concatène plusieurs tableaux de chiffres, un tableau pour chaque couleur Rouge (R), Vert (G), Bleu (B) :</p>
+
+<img data-src="../img/rgb.png" class="r-stretch quarto-figure-center"><p class="caption">Schéma explicatif image couleur</p><ul>
+<li>Une image satellite peut avoir d’autres couches (ou bandes) que les RGB : infrarouge par exemple.</li>
+<li>Les images satellites contiennent des données qui contiennent des informations géographiques → chaque pixel a une coordonnée dans l’espace et on peut le localiser.</li>
+</ul>
+</section>
+<section id="une-image-satellite" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>Une image satellite</h2>
+<p>Plusieurs caractéristiques existent pour une image satellite :</p>
+<ul>
+<li><strong>La résolution spatiale :</strong> équivalence entre un pixel et le nombre de mètres couverts par ce dernier</li>
+<li><strong>La fréquence d’acquisition :</strong> fréquence des prises de vue pour un même endroit</li>
+<li><strong>La résolution spectrale :</strong> Nombre de bandes</li>
+<li><strong>La couverture géographique</strong></li>
+</ul>
+<p>La résolution de l’image et sa fréquence d’acquisition nous intéressent tout particulièrement ici !</p>
+</section>
+<section id="images-satellite-à-notre-disposition" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>Images satellite à notre disposition</h2>
 <p>Pleiades/ RIL / BDTOPO</p>
 <p>parler sentinel</p>
 <p>Raya / Clément</p>
+</section></section>
+<section>
+<section id="méthodologie" class="title-slide slide level1 center" data-background-image="background.svg" data-background-size="contain">
+<h1>Méthodologie</h1>
+
 </section>
-<section id="méthodologie" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<section id="méthodologie-1" class="slide level2" data-background-image="background.svg" data-background-size="contain">
 <h2>Méthodologie</h2>
 <p>modèle de segmentation, masque de diff</p>
 <p>(variable d’ajustement) Tom /</p>
+</section></section>
+<section>
+<section id="résultats-obtenus" class="title-slide slide level1 center" data-background-image="background.svg" data-background-size="contain">
+<h1>Résultats obtenus</h1>
+
 </section>
-<section id="résultats-obtenus" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<section id="résultats-obtenus-1" class="slide level2" data-background-image="background.svg" data-background-size="contain">
 <h2>Résultats obtenus</h2>
 <p>bien parler des limites, comment interpreter les polygones issus du modèle ?</p>
 <p>Gaetan Raya</p>
+</section></section>
+<section>
+<section id="structure-du-projet" class="title-slide slide level1 center" data-background-image="background.svg" data-background-size="contain">
+<h1>Structure du projet</h1>
+
 </section>
 <section id="outils-utilisés" class="slide level2" data-background-image="background.svg" data-background-size="contain">
 <h2>Outils utilisés</h2>
-<p>Parler des différents outils utilisés. Expliquer la pipeline et l’automatisation des étapes</p>
-<p>Thomas</p>
+<ul>
+<li>Projet <span class="orange"><strong>techniquement complexe</strong></span> pour diverses raisons :
+<ul>
+<li>Données <span class="blue2"><strong>non traditionnelles</strong></span></li>
+<li><span class="blue2"><strong>Volumétrie</strong></span> des données</li>
+<li>Besoins <span class="blue2"><strong>ressources computationnelles</strong></span> élevées</li>
+</ul></li>
+<li>Nécessité d’utiliser des <span class="orange"><strong>technologies spécifiques</strong></span>, pas forcément dans le <em>toolkit</em> standard du statisticien</li>
+<li>Plateforme <a href="https://datalab.sspcloud.fr/">SSPCloud</a> centrale pour la réalisation d’un tel projet</li>
+<li>Projet construit en <span class="blue2"><strong>6 étapes séquentielles</strong></span></li>
+</ul>
 </section>
-<section id="discussion" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<section id="etape-1-récupération-des-données" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>Etape 1 : Récupération des données</h2>
+<ul>
+<li>Récupération <span class="orange"><strong>artisanale</strong></span> des images Pléiades :
+<ul>
+<li>Demandes réalisées par <span class="blue2"><strong>mail</strong></span> à l’IGN, échanges via <span class="blue2"><strong>FTP</strong></span></li>
+<li>Groupe <em>DMRG</em> créé sur <a href="https://dinamis.data-terra.org/">Dinamis</a>, mais non utilisé</li>
+</ul></li>
+<li>Images de Guyane via ST973 (partenariat CNES ?)</li>
+<li>Datation des images <span class="orange"><strong>peu précise</strong></span> et <span class="orange"><strong>non standardisée</strong></span></li>
+<li><span class="orange"><strong>Stockage</strong></span> des images orthos 8bits sur le <a href="https://datalab.sspcloud.fr/">SSPCloud</a></li>
+</ul>
+</section>
+<section id="etape-2-preprocessing-des-images-recueillis-argo-workflow" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>Etape 2 : Preprocessing des images recueillis (Argo Workflow)</h2>
+<p>“Pleiades © CNES_{year}, Distribution AIRBUS DS”</p>
+</section>
+<section id="etape-3-modélisation-et-entraînement-argo-workflow-mlflow-pytorch" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>Etape 3 : Modélisation et entraînement (Argo Workflow, MLflow, Pytorch)</h2>
+</section>
+<section id="etape-4-inférence-du-modèle-api-argo-cd" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>Etape 4 : Inférence du modèle (API, Argo CD)</h2>
+</section>
+<section id="etape-5-mise-à-disposition-des-résultats-geoserver-react" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>Etape 5 : Mise à disposition des résultats (Geoserver, React)</h2>
+</section>
+<section id="etape-6-analyses-des-résultats-selon-les-cas-dusages" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>Etape 6 : Analyses des résultats selon les cas d’usages</h2>
+<p>Docker, Kube</p>
+<p>Schéma reliant les 5 étapes, identifiant ce qui est automatisé et ce qui ne l’est pas</p>
+</section></section>
+<section>
+<section id="discussion" class="title-slide slide level1 center" data-background-image="background.svg" data-background-size="contain">
+<h1>Discussion</h1>
+
+</section>
+<section id="discussion-1" class="slide level2" data-background-image="background.svg" data-background-size="contain">
 <h2>Discussion</h2>
 <p>Discussion en reprenant la pipeline pour citer les limites et les besoins parler Judith et sentinel Dire ou on en est exactement et ce qu’on a : on a pas un remplacement de l’enquete carto et on sait pas faire le recenssement de Mayotte futur du projet</p>
+<p>Facturation des images hautes résolution <span class="math inline">\(\approx 1.50 / km^2\)</span></p>
 
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 
 </div>
 </div>
-</section>
+</section></section>
     </div>
   </div>
 
