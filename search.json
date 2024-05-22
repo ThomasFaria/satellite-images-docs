@@ -25,14 +25,21 @@
     "href": "src/seminaire-dirag/index.html#quest-ce-quune-image",
     "title": "Travaux exploratoires avec des données satellites : Bilan des résultats obtenus",
     "section": "Qu’est-ce qu’une image ?",
-    "text": "Qu’est-ce qu’une image ?\nUne image en couleurs concatène plusieurs tableaux de chiffres, un tableau pour chaque couleur Rouge (R), Vert (G), Bleu (B) :\n\n\nUne image satellite peut avoir d’autres couches (ou bandes) que les RGB : infrarouge par exemple.\nLes images satellites contiennent des données qui contiennent des informations géographiques → chaque pixel a une coordonnée dans l’espace et on peut le localiser."
+    "text": "Qu’est-ce qu’une image ?\nUne image en couleurs concatène plusieurs tableaux de chiffres, un tableau pour chaque couleur Rouge (R), Vert (G), Bleu (B) :"
   },
   {
     "objectID": "src/seminaire-dirag/index.html#une-image-satellite",
     "href": "src/seminaire-dirag/index.html#une-image-satellite",
     "title": "Travaux exploratoires avec des données satellites : Bilan des résultats obtenus",
     "section": "Une image satellite",
-    "text": "Une image satellite\nPlusieurs caractéristiques existent pour une image satellite :\n\nLa résolution spatiale : équivalence entre un pixel et le nombre de mètres couverts par ce dernier\nLa fréquence d’acquisition : fréquence des prises de vue pour un même endroit\nLa résolution spectrale : Nombre de bandes\nLa couverture géographique\n\nLa résolution de l’image et sa fréquence d’acquisition nous intéressent tout particulièrement ici !"
+    "text": "Une image satellite\n\nUne image satellite peut avoir d’autres couches (ou bandes) que les RGB : infrarouge par exemple.\nLes images satellites contiennent des données qui contiennent des informations géographiques → chaque pixel a une coordonnée dans l’espace et on peut le localiser."
+  },
+  {
+    "objectID": "src/seminaire-dirag/index.html#caractéristiques-dune-image-satellite",
+    "href": "src/seminaire-dirag/index.html#caractéristiques-dune-image-satellite",
+    "title": "Travaux exploratoires avec des données satellites : Bilan des résultats obtenus",
+    "section": "Caractéristiques d’une image satellite",
+    "text": "Caractéristiques d’une image satellite\nPlusieurs caractéristiques existent pour une image satellite :\n\nLa résolution spatiale : équivalence entre un pixel et le nombre de mètres couverts par ce dernier\nLa fréquence d’acquisition : fréquence des prises de vue pour un même endroit\nLa résolution spectrale : Nombre de bandes\nLa couverture géographique\n\nLa a fréquence d’acquisition et la couverture géographique nous intéressent tout particulièrement ici !"
   },
   {
     "objectID": "src/seminaire-dirag/index.html#images-satellite-à-notre-disposition",
