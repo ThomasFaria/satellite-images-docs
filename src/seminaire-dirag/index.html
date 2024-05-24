@@ -414,26 +414,26 @@
 <section id="une-image-satellite" class="slide level2" data-background-image="background.svg" data-background-size="contain">
 <h2>Une image satellite</h2>
 <ul>
-<li>Une image satellite peut avoir d’autres couches (ou bandes) que les RGB : infrarouge par exemple.</li>
-<li>Les images satellites contiennent des informations géographiques → chaque pixel a une coordonnée dans l’espace.</li>
+<li>Une image satellite peut avoir d’autres <span class="orange"><strong>couches</strong></span> (ou <span class="orange"><strong>bandes</strong></span>) que les RGB : infrarouge par exemple.</li>
+<li>Les images satellites contiennent des informations géographiques → <span class="blue2"><strong>chaque pixel a des coordonnées</strong></span> dans l’espace.</li>
 </ul>
 </section>
 <section id="caractéristiques-dune-image-satellite" class="slide level2" data-background-image="background.svg" data-background-size="contain">
 <h2>Caractéristiques d’une image satellite</h2>
 <p>Plusieurs caractéristiques existent pour une image satellite :</p>
 <ul>
-<li><strong>La résolution spatiale :</strong> équivalence entre un pixel et le nombre de mètres couverts par ce dernier</li>
+<li><strong>La résolution spatiale :</strong> le nombre de mètres couverts par un pixel</li>
 <li><strong>La fréquence d’acquisition :</strong> fréquence des prises de vue pour un même endroit</li>
-<li><strong>La résolution spectrale :</strong> Nombre de bandes</li>
+<li><strong>La résolution spectrale :</strong> nombre de bandes</li>
 <li><strong>La couverture géographique</strong></li>
 </ul>
-<p>La fréquence d’acquisition et la couverture géographique nous intéressent tout particulièrement ici !</p>
+<p>La et la <span class="blue2"><strong>couverture géographique</strong></span> nous intéressent tout particulièrement ici !</p>
 </section>
 <section id="images-satellite-à-notre-disposition" class="slide level2" data-background-image="background.svg" data-background-size="contain">
 <h2>Images satellite à notre disposition</h2>
 <ul>
-<li>Images très haute résolution : <strong>Pléiades</strong> (Airbus)</li>
-<li>Images haute résolution : <strong>Sentinel2</strong></li>
+<li>Images très haute résolution : <span class="blue2"><strong>Pléiades</strong></span> (Airbus)</li>
+<li>Images haute résolution : <span class="orange"><strong>Sentinel2</strong></span></li>
 </ul>
 </section>
 <section id="images-pléiades" class="slide level2" data-background-image="background.svg" data-background-size="contain">
@@ -442,19 +442,19 @@
 <li><p><strong>Fréquence d’acquisition</strong> :</p>
 <ul>
 <li>Archives gratuites</li>
-<li>Payant sur demande (1,80€/km²): <strong>6 à 8 mois</strong> pour avoir un département</li>
+<li>Payant sur demande (1,80€/km²): <span class="blue2"><strong>6 à 8 mois</strong></span> pour avoir un département</li>
 </ul></li>
-<li><p><strong>Résolution spectrale</strong> : 3</p></li>
-<li><p><strong>Résolution spatiale</strong> : un pixel = 0.5x0.5 m</p></li>
+<li><p><strong>Résolution spectrale</strong> : <span class="orange">3 bandes (RGB)</span></p></li>
+<li><p><strong>Résolution spatiale</strong> : <span class="blue2">un pixel = 0.5x0.5 m</span></p></li>
 <li><p>Taille d’une image : 2000*2000 pixels = 1km²</p></li>
 </ul>
 </section>
 <section id="images-sentinel2" class="slide level2" data-background-image="background.svg" data-background-size="contain">
 <h2>Images Sentinel2</h2>
 <ul>
-<li><p><strong>Fréquence d’acquisition</strong> : tous les 5 jours et gratuit</p></li>
+<li><p><strong>Fréquence d’acquisition</strong> : <span class="orange">tous les 5 jours</span> et gratuit</p></li>
 <li><p><strong>Résolution spectrale</strong> : 13</p></li>
-<li><p><strong>Résolution spatiale</strong> : un pixel = 10x10 m</p></li>
+<li><p><strong>Résolution spatiale</strong> : <span class="blue2">un pixel = 10x10 m</span></p></li>
 <li><p>Taille d’une image : 250*250 pixels = 0.625 km²</p></li>
 </ul>
 </section>
@@ -501,7 +501,7 @@
 <section id="la-bdtopo" class="slide level2" data-background-image="background.svg" data-background-size="contain">
 <h2>La BDTOPO</h2>
 <ul>
-<li>Annotation d’un bâtiment = un polygone</li>
+<li>Annotation d’un bâtiment = <span class="blue2">un polygone</span></li>
 <li>Elle est construite à partir d’ortho-photos de l’IGN (prises de vue aériennes)</li>
 <li>Difficile à ce stade d’avoir une information millésimée</li>
 </ul>
@@ -513,7 +513,7 @@
 <section id="le-ril" class="slide level2" data-background-image="background.svg" data-background-size="contain">
 <h2>Le RIL</h2>
 <ul>
-<li>Annotation d’un bâtiment = un carré qui pointe sur le bâtiment (et non polygone)</li>
+<li>Annotation d’un bâtiment = <span class="orange">un carré</span> qui pointe sur le bâtiment (et non polygone)</li>
 <li>Le répertoire des immeubles localisés est une base de sondage utilisée pour le RP</li>
 <li>Dans les DOMs, peu ou pas de permis de construire</li>
 <li>L’enquête cartographique met à jour 1/5 des logements dans le territoire (5 groupes de rotation, 1 îlot approximativement 1 GR)</li>
@@ -528,7 +528,7 @@
 <h2>Comparaison BDTOPO/RIL</h2>
 <ul>
 <li>Finalement, le RIL nous permet d’avoir des points millésimés précisément mais les approximations de contours de logements sont grossières</li>
-<li>La BDTOPO est moins “millésimable” mais les contours de bâtis obtenus sont plus précis</li>
+<li>La BDTOPO est moins “millésimable” mais <span class="orange">les contours de bâtis sont plus précis</span></li>
 <li>D’autres sources de données sont mobilisables pour les annotations (OpenStreetMap, annotation de google ou de microsoft) Nous avons choisi d’entraîner nos modèles sur les annotations BDTOPO.</li>
 </ul>
 </section></section>

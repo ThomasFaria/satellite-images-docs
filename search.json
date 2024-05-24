@@ -67,14 +67,14 @@
     "href": "src/seminaire-dirag/index.html#une-image-satellite",
     "title": "Travaux exploratoires avec des données satellites : Bilan des résultats obtenus",
     "section": "Une image satellite",
-    "text": "Une image satellite\n\nUne image satellite peut avoir d’autres couches (ou bandes) que les RGB : infrarouge par exemple.\nLes images satellites contiennent des informations géographiques → chaque pixel a une coordonnée dans l’espace."
+    "text": "Une image satellite\n\nUne image satellite peut avoir d’autres couches (ou bandes) que les RGB : infrarouge par exemple.\nLes images satellites contiennent des informations géographiques → chaque pixel a des coordonnées dans l’espace."
   },
   {
     "objectID": "src/seminaire-dirag/index.html#caractéristiques-dune-image-satellite",
     "href": "src/seminaire-dirag/index.html#caractéristiques-dune-image-satellite",
     "title": "Travaux exploratoires avec des données satellites : Bilan des résultats obtenus",
     "section": "Caractéristiques d’une image satellite",
-    "text": "Caractéristiques d’une image satellite\nPlusieurs caractéristiques existent pour une image satellite :\n\nLa résolution spatiale : équivalence entre un pixel et le nombre de mètres couverts par ce dernier\nLa fréquence d’acquisition : fréquence des prises de vue pour un même endroit\nLa résolution spectrale : Nombre de bandes\nLa couverture géographique\n\nLa fréquence d’acquisition et la couverture géographique nous intéressent tout particulièrement ici !"
+    "text": "Caractéristiques d’une image satellite\nPlusieurs caractéristiques existent pour une image satellite :\n\nLa résolution spatiale : le nombre de mètres couverts par un pixel\nLa fréquence d’acquisition : fréquence des prises de vue pour un même endroit\nLa résolution spectrale : nombre de bandes\nLa couverture géographique\n\nLa et la couverture géographique nous intéressent tout particulièrement ici !"
   },
   {
     "objectID": "src/seminaire-dirag/index.html#images-satellite-à-notre-disposition",
@@ -88,7 +88,7 @@
     "href": "src/seminaire-dirag/index.html#images-pléiades",
     "title": "Travaux exploratoires avec des données satellites : Bilan des résultats obtenus",
     "section": "Images Pléiades",
-    "text": "Images Pléiades\n\nFréquence d’acquisition :\n\nArchives gratuites\nPayant sur demande (1,80€/km²): 6 à 8 mois pour avoir un département\n\nRésolution spectrale : 3\nRésolution spatiale : un pixel = 0.5x0.5 m\nTaille d’une image : 2000*2000 pixels = 1km²"
+    "text": "Images Pléiades\n\nFréquence d’acquisition :\n\nArchives gratuites\nPayant sur demande (1,80€/km²): 6 à 8 mois pour avoir un département\n\nRésolution spectrale : 3 bandes (RGB)\nRésolution spatiale : un pixel = 0.5x0.5 m\nTaille d’une image : 2000*2000 pixels = 1km²"
   },
   {
     "objectID": "src/seminaire-dirag/index.html#images-sentinel2",
@@ -144,7 +144,7 @@
     "href": "src/seminaire-dirag/index.html#comparaison-bdtoporil",
     "title": "Travaux exploratoires avec des données satellites : Bilan des résultats obtenus",
     "section": "Comparaison BDTOPO/RIL",
-    "text": "Comparaison BDTOPO/RIL\n\nFinalement, le RIL nous permet d’avoir des points millésimés précisément mais les approximations de contours de logements sont grossières\nLa BDTOPO est moins “millésimable” mais les contours de bâtis obtenus sont plus précis\nD’autres sources de données sont mobilisables pour les annotations (OpenStreetMap, annotation de google ou de microsoft) Nous avons choisi d’entraîner nos modèles sur les annotations BDTOPO."
+    "text": "Comparaison BDTOPO/RIL\n\nFinalement, le RIL nous permet d’avoir des points millésimés précisément mais les approximations de contours de logements sont grossières\nLa BDTOPO est moins “millésimable” mais les contours de bâtis sont plus précis\nD’autres sources de données sont mobilisables pour les annotations (OpenStreetMap, annotation de google ou de microsoft) Nous avons choisi d’entraîner nos modèles sur les annotations BDTOPO."
   },
   {
     "objectID": "src/seminaire-dirag/index.html#segmentation-sémantique",
