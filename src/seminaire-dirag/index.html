@@ -346,14 +346,60 @@
 <h1>Introduction</h1>
 
 </section>
-<section id="introduction-1" class="slide level2" data-background-image="background.svg" data-background-size="contain">
-<h2>Introduction</h2>
+<section id="origine-du-projet" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>Origine du projet</h2>
 <ul>
-<li><p>Contexte et origine du projet -&gt; pourquoi on a créé cette equipe de ouf 1er stage Quentin puis groupe avec DOM puis 2 stagiaires assez nulles puis reprise septembre 2023 + dernier stagios depuis mars -&gt; Now MAI 2024 fin expérimentation</p></li>
-<li><p>Pourquoi les images satellites ? Memorandum de varsovie DMRG : besoin d’expertise DMTR : améliorer recensement DOM : améliorer orga de l’enquete carto + soutien<br>
-Etude consommation d’espace</p></li>
+<li>Dans le cadre du stage de Quentin Chabennet en 2022, participation au <a href="https://challengedata.ens.fr/">Challenge Data</a> <a href="https://challengedata.ens.fr/challenges/48">“Land cover predictive modeling from satellite images”</a></li>
+<li>SSM Agriculture: travail avec le Centre d’études spatiales de la biosphère (Cesbio). Comparaison de la carte d’<span class="orange"><strong>occupation du sol</strong></span> issue de l’enquête Teruti avec une carte construite avec des données de télédétection</li>
+<li>En Guyane, <span class="orange"><strong>fonds de carte issus de données Pleiades</strong></span> utilisés pour la collecte</li>
+<li>Discussion sur la possibilité d’utiliser de l’imagerie satellite pour faciliter l’<span class="orange"><strong>organisation de l’enquête cartographique</strong></span> en Guyane et à Mayotte</li>
 </ul>
-<p>Thomas / Clement</p>
+</section>
+<section id="une-source-de-données-à-fort-potentiel" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>Une source de données à fort potentiel</h2>
+<ul>
+<li>En théorie, <span class="orange"><strong>observation de tout le territoire</strong></span> quasiment en temps réel</li>
+<li><span class="orange"><strong>Sentinel-2</strong></span> : données haute résolution en accès libre à haute fréquence temporelle. Un même territoire est couvert environ tous les 5 jours</li>
+<li>Communauté utilise ces données, ce qui donne lieu à la publication de <span class="orange"><strong>contenu open-source</strong></span> (détection de nuages, etc.)</li>
+</ul>
+</section>
+<section id="une-source-de-données-à-fort-potentiel-1" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>Une source de données à fort potentiel</h2>
+<ul>
+<li><span class="orange"><strong>Pleiades</strong></span> : données très haute résolution. Archives disponibles gratuitement pour l’Insee, et possibilité de faire des commandes (<strong>tasking</strong>), gratuites sous un certain quota</li>
+</ul>
+</section>
+<section id="utilisation-pour-la-statistique-publique" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>Utilisation pour la statistique publique</h2>
+<ul>
+<li><a href="https://dgins2021.stat.gov.pl/warsaw-memorandum">Mémorandum de Varsovie</a> adopté par le Comité du Système statistique européen, pour <span class="orange"><strong>encourager l’utilisation des données satellites</strong></span> pour l’élaboration de statistiques publiques</li>
+<li>Utilisation en complément des sources traditionnelles pour améliorer la connaissance de l’Insee sur le <span class="orange"><strong>bâti</strong></span> :
+<ul>
+<li>En particulier dans les DROM, <span class="blue2"><strong>facilitation de l’organisation des enquêtes cartographiques</strong></span></li>
+<li><span class="blue2"><strong>Cartographie du bâti</strong></span> à un instant précis</li>
+<li><span class="blue2"><strong>Etudes ponctuelles</strong></span> (consommation d’espace)</li>
+</ul></li>
+</ul>
+<!-- A mentionner, meilleure enqu&#xEA;te cartographique = meilleur RIL = meilleures enqu&#xEA;tes -->
+</section>
+<section id="utilisation-pour-la-statistique-publique-1" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>Utilisation pour la statistique publique</h2>
+<ul>
+<li>Possibilité d’aller jusqu’à contribuer à des <span class="blue2"><strong>estimations de population ?</strong></span></li>
+<li><span class="orange"><strong>Nombreux acteurs intéressés</strong></span> : DMS (DMRG), DMTR, directions Antilles-Guyane et La Réunion-Mayotte</li>
+</ul>
+</section>
+<section id="début-des-travaux" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>Début des travaux</h2>
+<ul>
+<li><span class="orange"><strong>Détection automatique de changements</strong></span> (apparitions, disparitions) sur le bâti dans les DROM (Mayotte)</li>
+<li>Appui pour l’<span class="orange"><strong>organisation des enquêtes cartographiques</strong></span> :
+<ul>
+<li>On sélectionne les <span class="blue2"><strong>îlots concernés</strong></span></li>
+<li>On récupère des données satellites couvrant ces îlots <span class="blue2"><strong>à la date de la précédente enquête</strong></span> cartographique et des <span class="blue2"><strong>données fraiches</strong></span></li>
+<li>A l’aide de la méthode développée, on repère les ilots avec <span class="blue2"><strong>beaucoup de nouveaux bâtiments</strong></span>, etc.</li>
+</ul></li>
+</ul>
 </section></section>
 <section>
 <section id="les-données" class="title-slide slide level1 center" data-background-image="background.svg" data-background-size="contain">
@@ -363,15 +409,13 @@ Etude consommation d’espace</p></li>
 <section id="quest-ce-quune-image" class="slide level2" data-background-image="background.svg" data-background-size="contain">
 <h2>Qu’est-ce qu’une image ?</h2>
 <p>Une image en couleurs concatène plusieurs tableaux de chiffres, un tableau pour chaque couleur Rouge (R), Vert (G), Bleu (B) :</p>
-<div style="text-align: center;">
-<p><img src="../img/rgb.png" alt="" width="700&quot;" height="350"></p>
-</div>
-</section>
+
+<img data-src="../img/rgb.png" style="width:75.0%" class="r-stretch"></section>
 <section id="une-image-satellite" class="slide level2" data-background-image="background.svg" data-background-size="contain">
 <h2>Une image satellite</h2>
 <ul>
 <li>Une image satellite peut avoir d’autres couches (ou bandes) que les RGB : infrarouge par exemple.</li>
-<li>Les images satellites contiennent des données qui contiennent des informations géographiques → chaque pixel a une coordonnée dans l’espace et on peut le localiser.</li>
+<li>Les images satellites contiennent des informations géographiques → chaque pixel a une coordonnée dans l’espace.</li>
 </ul>
 </section>
 <section id="caractéristiques-dune-image-satellite" class="slide level2" data-background-image="background.svg" data-background-size="contain">
@@ -383,34 +427,281 @@ Etude consommation d’espace</p></li>
 <li><strong>La résolution spectrale :</strong> Nombre de bandes</li>
 <li><strong>La couverture géographique</strong></li>
 </ul>
-<p>La a fréquence d’acquisition et la couverture géographique nous intéressent tout particulièrement ici !</p>
+<p>La fréquence d’acquisition et la couverture géographique nous intéressent tout particulièrement ici !</p>
 </section>
 <section id="images-satellite-à-notre-disposition" class="slide level2" data-background-image="background.svg" data-background-size="contain">
 <h2>Images satellite à notre disposition</h2>
-<p>Pleiades/ RIL / BDTOPO</p>
-<p>parler sentinel</p>
-<p>Raya / Clément</p>
+<ul>
+<li>Images très haute résolution : <strong>Pléiades</strong> (Airbus)</li>
+<li>Images haute résolution : <strong>Sentinel2</strong></li>
+</ul>
+</section>
+<section id="images-pléiades" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>Images Pléiades</h2>
+<ul>
+<li><p><strong>Fréquence d’acquisition</strong> :</p>
+<ul>
+<li>Archives gratuites</li>
+<li>Payant sur demande (1,80€/km²): <strong>6 à 8 mois</strong> pour avoir un département</li>
+</ul></li>
+<li><p><strong>Résolution spectrale</strong> : 3</p></li>
+<li><p><strong>Résolution spatiale</strong> : un pixel = 0.5x0.5 m</p></li>
+<li><p>Taille d’une image : 2000*2000 pixels = 1km²</p></li>
+</ul>
+</section>
+<section id="images-sentinel2" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>Images Sentinel2</h2>
+<ul>
+<li><p><strong>Fréquence d’acquisition</strong> : tous les 5 jours et gratuit</p></li>
+<li><p><strong>Résolution spectrale</strong> : 13</p></li>
+<li><p><strong>Résolution spatiale</strong> : un pixel = 10x10 m</p></li>
+<li><p>Taille d’une image : 250*250 pixels = 0.625 km²</p></li>
+</ul>
+</section>
+<section id="pléiades-vs-sentinel-2" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>Pléiades vs Sentinel-2</h2>
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="../img/pleiade.png" style="width:75.0%"></p>
+<figcaption>Pleiades</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="../img/Sentinel2.png" style="width:75.0%"></p>
+<figcaption>Sentinel2</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<p>Pleiades © CNES_2022, Distribution AIRBUS DS</p>
+</div>
+</div>
+</div>
+<p>Nous allons nous focaliser sur les images Pléiades pour cette présentation.</p>
+</section>
+<section id="sources-dannotations-de-bâtiments" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>Sources d’annotations de bâtiments</h2>
+<p>Obtenir ces annotations peut être coûteux, mais on dispose de données permettant de s’approcher :</p>
+<ul>
+<li><p>Le RIL (INSEE)</p></li>
+<li><p>La BDTOPO (IGN)</p></li>
+</ul>
+</section>
+<section id="la-bdtopo" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>La BDTOPO</h2>
+<ul>
+<li>Annotation d’un bâtiment = un polygone</li>
+<li>Elle est construite à partir d’ortho-photos de l’IGN (prises de vue aériennes)</li>
+<li>Difficile à ce stade d’avoir une information millésimée</li>
+</ul>
+</section>
+<section id="exemple-dannotations-bdtopo" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>Exemple d’annotations BDTOPO</h2>
+
+<img data-src="../img/masqueBDTOPO.png" style="width:75.0%" class="r-stretch quarto-figure-center"><p class="caption">Masque BDTOPO</p></section>
+<section id="le-ril" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>Le RIL</h2>
+<ul>
+<li>Annotation d’un bâtiment = un carré qui pointe sur le bâtiment (et non polygone)</li>
+<li>Le répertoire des immeubles localisés est une base de sondage utilisée pour le RP</li>
+<li>Dans les DOMs, peu ou pas de permis de construire</li>
+<li>L’enquête cartographique met à jour 1/5 des logements dans le territoire (5 groupes de rotation, 1 îlot approximativement 1 GR)</li>
+<li>Enquête cartographique réalisée d’avril à août sur une année donnée</li>
+</ul>
+</section>
+<section id="exemple-dannotations-ril" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>Exemple d’annotations RIL</h2>
+
+<img data-src="../img/masqueRIL.png" style="width:75.0%" class="r-stretch quarto-figure-center"><p class="caption">Masque RIL</p></section>
+<section id="comparaison-bdtoporil" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>Comparaison BDTOPO/RIL</h2>
+<ul>
+<li>Finalement, le RIL nous permet d’avoir des points millésimés précisément mais les approximations de contours de logements sont grossières</li>
+<li>La BDTOPO est moins “millésimable” mais les contours de bâtis obtenus sont plus précis</li>
+<li>D’autres sources de données sont mobilisables pour les annotations (OpenStreetMap, annotation de google ou de microsoft) Nous avons choisi d’entraîner nos modèles sur les annotations BDTOPO.</li>
+</ul>
 </section></section>
 <section>
 <section id="méthodologie" class="title-slide slide level1 center" data-background-image="background.svg" data-background-size="contain">
 <h1>Méthodologie</h1>
 
 </section>
-<section id="méthodologie-1" class="slide level2" data-background-image="background.svg" data-background-size="contain">
-<h2>Méthodologie</h2>
-<p>modèle de segmentation, masque de diff</p>
-<p>(variable d’ajustement) Tom /</p>
-</section></section>
+<section id="segmentation-sémantique" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>Segmentation sémantique</h2>
+
+<img data-src="../img/segmentation_exemple.png" style="width:80.0%" class="r-stretch"></section>
+<section id="de-segmentation-à-détection-de-changements" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>De segmentation à détection de changements</h2>
+
+<img data-src="../img/stratégie_segmentation.png" style="width:80.0%" class="r-stretch"></section></section>
 <section>
 <section id="résultats-obtenus" class="title-slide slide level1 center" data-background-image="background.svg" data-background-size="contain">
 <h1>Résultats obtenus</h1>
 
 </section>
-<section id="résultats-obtenus-1" class="slide level2" data-background-image="background.svg" data-background-size="contain">
-<h2>Résultats obtenus</h2>
-<p>bien parler des limites, comment interpreter les polygones issus du modèle ?</p>
-<p>Gaetan Raya</p>
-</section></section>
+<section id="résultats-de-mayotte" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>Résultats de Mayotte</h2>
+
+<img data-src="../img/pred_2023_mayotte.png" class="quarto-figure quarto-figure-center r-stretch" style="width:50.0%"></section>
+<section id="section" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2></h2>
+<div class="columns">
+<div id="vcenter" class="column" style="width:50%;">
+<p><img data-src="../img/pred_2023_mayotte.png" style="width:90.0%"></p>
+</div><div id="vcenter" class="column" style="width:50%;">
+<p><img data-src="../img/quartiersmayotte.png" id="vcenter" style="width:100.0%"></p>
+</div>
+</div>
+<p>Prédictions originales 2023 de Mayotte et localisation des quartiers de l’île (Insee 2012)</p>
+</section>
+<section id="étalement-urbain" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>Étalement urbain</h2>
+
+<img data-src="../img/pred_2020_creation_mayotte.png" class="quarto-figure quarto-figure-center r-stretch" style="width:50.0%"></section>
+<section id="construction-de-logements" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>Construction de logements</h2>
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img data-src="../img/pleiade_2020_creation_2023.png" style="width:100.0%"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img data-src="../img/pleiade_2023_creation_2023.png" style="width:100.0%"></p>
+</div>
+</div>
+</div>
+<p>Prédictions 2023 sur fond d’image 2020 et sur fond d’image 2023</p>
+</section>
+<section id="prédictions-dun-centre-ville" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>Prédictions d’un centre-ville</h2>
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 51.3%;justify-content: flex-start;">
+<div id="fig-pred2023initmap" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-fig">
+<div aria-describedby="fig-pred2023initmap-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="../img/pred2023initmap.png" id="fig-pred2023initmap" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-pred2023initmap-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 48.7%;justify-content: flex-start;">
+<div id="fig-pred2023init2" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-fig">
+<div aria-describedby="fig-pred2023init2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="../img/pred2023init.png" id="fig-pred2023init2" style="width:95.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-pred2023init2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<p>Prédictions originales 2023 d’une zone de Mayotte</p>
+</section>
+<section id="imperfections-du-modèle" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>Imperfections du modèle</h2>
+<div class="columns">
+<div id="vcenter" class="column" style="width:55%;">
+<ul>
+<li>Frontières entre les images</li>
+<li>Délimitations imprécises</li>
+<li>Minuscules polygones</li>
+</ul>
+</div><div id="vcenter" class="column" style="width:45%;">
+<div id="fig-pred2023init2" class="quarto-float quarto-figure quarto-figure-center" width="100%">
+<figure class="quarto-float quarto-float-fig">
+<div aria-describedby="fig-pred2023init2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="../img/pred2023init.png" id="fig-pred2023init2" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-pred2023init2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="nettoyage-des-polygones" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>Nettoyage des polygones</h2>
+<ul>
+<li>Application d’un <span class="orange"><strong>buffer</strong></span> positif puis négatif
+<ul>
+<li>Propriétés de <span class="blue2"><strong>lissage</strong></span> (arrondis)</li>
+<li>Clôture des petites brèches dans les bâtiments</li>
+</ul></li>
+</ul>
+
+<img data-src="../img/Buffer.jpg" style="width:100.0%" class="r-stretch"><ul>
+<li><span class="orange"><strong>Fusion</strong></span> des polygones qui s’interceptent pour effacer les frontières</li>
+</ul>
+</section>
+<section id="petits-polygones" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>Petits polygones ?</h2>
+<p>Présence de petits polygones (de 1m² à 10m²) : qu’en faire ?</p>
+<ul>
+<li><span class="blue2"><strong>Logement décent</strong></span> : 9m²</li>
+<li><span class="blue2"><strong>Mayotte</strong></span> : 30% environ des logements n’ont pas accès à l’eau potable</li>
+</ul>
+<p>On ne cherche pas que les <span class="orange"><strong>logements décents</strong></span> :</p>
+<ul>
+<li>Recherche d’<span class="blue2"><strong>exhaustivité</strong></span> pour soutenir les enquêteurs</li>
+<li>Objectifs d’<span class="blue2"><strong>estimation de population</strong></span> (nombre de bâtiments ou surface ?)</li>
+</ul>
+</section>
+<section id="petits-polygones-1" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>Petits polygones ?</h2>
+<ul>
+<li><span class="orange"><strong>Observations manuelles</strong></span> : les petits polygones pointent souvent sur des bâtiments qui n’ont pas été repérés entièrement par l’algorithme. Ce n’est donc pas que du bruit.</li>
+</ul>
+<p><span class="orange"><strong>Conclusion</strong></span> : dans la mesure du possible, on conserve ces polygones.</p>
+</section>
+<section id="résultat-du-nettoyage" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>Résultat du nettoyage</h2>
+
+<img data-src="../img/predavecbuffer.png" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"></section>
+<section id="evolution-du-bâti" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>Evolution du bâti</h2>
+<p>Pour estimer l’évolution de la population, on se penche sur l’évolution de la surface construite.</p>
+<p>Plusieurs approches considérées :</p>
+<ul>
+<li>Créations et suppressions “pures” : aucune intersection avec un bâtiment existant</li>
+<li>Soustraction du bâti de deux années distinctes</li>
+</ul>
+<p>C’est la deuxième approche qui est privilégiée car les créations pures peuvent passer à côté de l’étalement d’un quartier.</p>
+</section>
+<section id="soustraction-du-bâti" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>Soustraction du bâti</h2>
+
+<img data-src="../img/schemasoustraction.png" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"></section>
+<section id="soustraction-du-bâti-1" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>Soustraction du bâti</h2>
+
+<img data-src="../img/creationssuppressions.png" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"></section>
+<section id="section-1" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2></h2>
+
+<!-- bien parler des limites, comment interpreter les polygones issus du mod&#xE8;le ? -->
+<img data-src="../img/creationssuppressionsfiltre.png" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"></section></section>
 <section>
 <section id="structure-du-projet" class="title-slide slide level1 center" data-background-image="background.svg" data-background-size="contain">
 <h1>Structure du projet</h1>
@@ -424,14 +715,16 @@ Etude consommation d’espace</p></li>
 <li>Données <span class="blue2"><strong>non traditionnelles</strong></span></li>
 <li><span class="blue2"><strong>Volumétrie</strong></span> des données</li>
 <li>Besoins <span class="blue2"><strong>ressources computationnelles</strong></span> élevées</li>
+<li><span class="blue2"><strong>Reproductibilité</strong></span> nécéssaire</li>
 </ul></li>
 <li>Nécessité d’utiliser des <span class="orange"><strong>technologies spécifiques</strong></span>, pas forcément dans le <em>toolkit</em> standard du statisticien</li>
 <li>Plateforme <a href="https://datalab.sspcloud.fr/">SSPCloud</a> centrale pour la réalisation d’un tel projet</li>
 <li>Projet construit en <span class="blue2"><strong>6 étapes séquentielles</strong></span></li>
 </ul>
+<!-- - Utilisation de python obligatoire? -->
 </section>
-<section id="etape-1-récupération-des-données" class="slide level2" data-background-image="background.svg" data-background-size="contain">
-<h2>Etape 1 : Récupération des données</h2>
+<section id="etape-1-récupération-des-images-satellitaires-brutes" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>Etape 1 : Récupération des images satellitaires brutes</h2>
 <ul>
 <li>Récupération <span class="orange"><strong>artisanale</strong></span> des images Pléiades :
 <ul>
@@ -443,33 +736,163 @@ Etude consommation d’espace</p></li>
 <li><span class="orange"><strong>Stockage</strong></span> des images orthos 8bits sur le <a href="https://datalab.sspcloud.fr/">SSPCloud</a></li>
 </ul>
 </section>
-<section id="etape-2-preprocessing-des-images-recueillis-argo-workflow" class="slide level2" data-background-image="background.svg" data-background-size="contain">
-<h2>Etape 2 : Preprocessing des images recueillis (Argo Workflow)</h2>
-<p>“Pleiades © CNES_{year}, Distribution AIRBUS DS”</p>
+<section id="etape-2-nettoyage-et-annotation-des-images-recueillis" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>Etape 2 : Nettoyage et annotation des images recueillis</h2>
+<ul>
+<li><p>Pipeline <span class="orange"><strong>Python</strong></span> <img height="25" width="25" src="https://cdn.simpleicons.org/python/00000"> pour formatter les images brutes :</p>
+<ul>
+<li><span class="blue2"><strong>Sélection</strong></span> des images pour une zone d’intérêt</li>
+<li><span class="blue2"><strong>Suppresion</strong></span> des images ennuagées</li>
+<li><span class="blue2"><strong>Découpage</strong></span> des images <span class="math inline">\(125m \times 125m\)</span></li>
+</ul></li>
+<li><p>Pipeline de <span class="orange"><strong>labellisation</strong></span> des images satellites avec la BDTOPO</p></li>
+<li><p>Automatisation avec <span class="orange"><strong>Argo Workflow</strong></span></p></li>
+</ul>
 </section>
-<section id="etape-3-modélisation-et-entraînement-argo-workflow-mlflow-pytorch" class="slide level2" data-background-image="background.svg" data-background-size="contain">
-<h2>Etape 3 : Modélisation et entraînement (Argo Workflow, MLflow, Pytorch)</h2>
+<section id="etape-3-modélisation-et-entraînement" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>Etape 3 : Modélisation et entraînement</h2>
+<ul>
+<li><p>Entraînement avec le package <span class="orange"><strong>Pytorch</strong></span></p></li>
+<li><p>Suivi et comparaison des modèles avec <a href="https://projet-slums-detection-128833.user.lab.sspcloud.fr/#/experiments/10?searchFilter=&amp;orderByKey=attributes.start_time&amp;orderByAsc=false&amp;startTime=ALL&amp;lifecycleFilter=Active&amp;modelVersionFilter=All%20Runs&amp;selectedColumns=attributes.%60Source%60,attributes.%60Models%60,params.%60module_name%60&amp;isComparingRuns=false&amp;compareRunCharts=dW5kZWZpbmVk" data-preview-link="true"><span class="orange"><strong>MLFlow</strong></span></a></p></li>
+<li><p>Utilisation <span class="orange"><strong>GPU</strong></span> SSP Cloud indispensable (10h d’entraînement)</p></li>
+<li><p>Automatisation Année x Département avec <span class="orange"><strong>Argo Workflow</strong></span></p></li>
+</ul>
 </section>
-<section id="etape-4-inférence-du-modèle-api-argo-cd" class="slide level2" data-background-image="background.svg" data-background-size="contain">
-<h2>Etape 4 : Inférence du modèle (API, Argo CD)</h2>
+<section id="etape-4-inférence-du-modèle" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>Etape 4 : Inférence du modèle</h2>
+<ul>
+<li><p>Utilisation de MLFlow pour l’<a href="https://projet-slums-detection-128833.user.lab.sspcloud.fr/#/models/test" data-preview-link="true">entrepôt de modèle</a></p></li>
+<li><p>Déploiement d’une <span class="orange"><strong>API</strong></span> pour réaliser l’inférence pour :</p>
+<ul>
+<li>une <span class="blue2"><strong>image</strong></span> donnée</li>
+<li>un <span class="blue2"><strong>îlot</strong></span> donné</li>
+<li>un <span class="blue2"><strong>contour géographique</strong></span> donné</li>
+</ul></li>
+<li><p>Déploiement continu de l’API avec <span class="orange"><strong>ArgoCD</strong></span></p></li>
+<li><p>Réalisation de l’inférence sur l’ensemble des images en parallèle avec <span class="orange"><strong>Argo Workflow</strong></span></p></li>
+</ul>
 </section>
-<section id="etape-5-mise-à-disposition-des-résultats-geoserver-react" class="slide level2" data-background-image="background.svg" data-background-size="contain">
-<h2>Etape 5 : Mise à disposition des résultats (Geoserver, React)</h2>
+<section id="etape-5-mise-à-disposition-des-résultats" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>Etape 5 : Mise à disposition des résultats</h2>
+<ul>
+<li><p>Déploiement d’un <span class="orange"><strong>Geoserver</strong></span> pour mettre à disposition les fichiers géographiques (images et prédictions)</p></li>
+<li><p>Développement d’une application <span class="orange"><strong>React</strong></span> pour visualiser les résultats</p>
+<ul>
+<li><a href="https://cratt.kub.sspcloud.fr/" data-preview-link="true">CRATT</a></li>
+</ul></li>
+</ul>
 </section>
 <section id="etape-6-analyses-des-résultats-selon-les-cas-dusages" class="slide level2" data-background-image="background.svg" data-background-size="contain">
 <h2>Etape 6 : Analyses des résultats selon les cas d’usages</h2>
-<p>Docker, Kube</p>
-<p>Schéma reliant les 5 étapes, identifiant ce qui est automatisé et ce qui ne l’est pas</p>
+<ul>
+<li>Travail statistique sur les prédictions :
+<ul>
+<li>Détection des zones à forte créations/disparition</li>
+<li>Production de statistiques par îlot</li>
+<li>Evaluation des résultats</li>
+</ul></li>
+</ul>
+</section>
+<section id="en-résumé" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>En résumé</h2>
+<ul>
+<li>🛠️ <span class="orange"><strong>Multitudes</strong></span> d’outils à utiliser :
+<ul>
+<li>Kubernetes, Docker, stockage MinIO, API, ArgoCD, Argo Workflow, MLFlow, React…</li>
+</ul></li>
+<li>… mais dont le coût d’apprentissage est rapidement <span class="orange"><strong>rentabilisé</strong></span> :
+<ul>
+<li>Technologies <span class="orange"><strong>“state of the art”</strong></span></li>
+<li>De plus en plus utilisées à l’Insee (LS3)</li>
+</ul></li>
+</ul>
+</section>
+<section id="en-résumé-1" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>En résumé</h2>
+<p>Schéma reliant les 6 étapes, identifiant ce qui est automatisé et ce qui ne l’est pas</p>
 </section></section>
-<section>
 <section id="discussion" class="title-slide slide level1 center" data-background-image="background.svg" data-background-size="contain">
 <h1>Discussion</h1>
 
 </section>
+
+<section>
+<section id="test" class="title-slide slide level1 center" data-background-image="background.svg" data-background-size="contain">
+<h1>Test</h1>
+
+</section>
 <section id="discussion-1" class="slide level2" data-background-image="background.svg" data-background-size="contain">
 <h2>Discussion</h2>
+<ul>
+<li>Opportunités pour l’enquête cartographique<br>
+</li>
+<li>Première utilisation des algorithmes effectuées par la DMTR pour prioriser l’envoi d’agents sur le terrain</li>
+<li>Opportunité pour le soutien des estimations de population à Mayotte</li>
+</ul>
+</section>
+<section id="maintenir-les-travaux" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>Maintenir les travaux :</h2>
+<ul>
+<li>Le produit final, s’appuie sur un bon nombre de briques :
+<ul>
+<li>Traitements des données (images, données Insee)</li>
+<li>Entraînement des algorithmes de Deep Learning</li>
+<li>Production des prédictions via API</li>
+<li>Mise en valeur des résultats (application WEB et mise en place d’un Geoserver)</li>
+</ul></li>
+</ul>
+</section>
+<section id="maintenir-les-travaux-1" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>Maintenir les travaux :</h2>
+
+<img data-src="../img/treatment_chain.png" id="fig-chain" style="width:100.0%" class="r-stretch quarto-figure-center"><p class="caption">
+</p></section>
+<section id="les-compétences-nécessaires" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>Les Compétences nécessaires :</h2>
+<ul>
+<li>compétences en analyse spatiale</li>
+<li>Développement d’application web</li>
+<li>Veille technique, rester à la pointe en Machine Learning</li>
+<li>veille sur les données, annotations etc..</li>
+</ul>
+</section>
+<section id="ce-quon-sait-faire" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>Ce qu’on sait faire :</h2>
+<ul>
+<li>L’algorithme entraîné permet de mesurer l’évolution du bâti <span class="math inline">\(\longrightarrow\)</span> Peut soutenir l’enquête cartographique<br>
+</li>
+<li>Estimations frustre de population réalisable, à partir des évolutions de bâti, <em>a minima</em> pour</li>
+</ul>
+</section>
+<section id="ce-quil-reste-à-faire" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>Ce qu’il reste à faire</h2>
+<ul>
+<li><p>Expertiser d’autres jeux de données :</p>
+<ul>
+<li>Pour les annotations</li>
+<li>Pour les images, données stéréoscopiques, Pleiades neo..</li>
+</ul></li>
+<li><p>Se rapprocher du concept de logement</p></li>
+<li><p>Maîtriser le processus d’acquisition des images, sa temporalité</p></li>
+<li><p>Expertiser les résultats de l’algorithme entraîné et faire</p></li>
+<li><p>Mesurer l’écart entre la réalité mesurer par le satellite et la réalité terrain,</p></li>
+<li><p>Travailler sur les jeux de données</p></li>
+</ul>
+</section>
+<section id="les-limites" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>Les limites</h2>
+<p>Beaucoup de briques à sur</p>
+</section>
+<section id="faire-avancer-le-projet" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>Faire avancer le projet :</h2>
 <p>Discussion en reprenant la pipeline pour citer les limites et les besoins parler Judith et sentinel Dire ou on en est exactement et ce qu’on a : on a pas un remplacement de l’enquete carto et on sait pas faire le recenssement de Mayotte futur du projet</p>
 <p>Facturation des images hautes résolution <span class="math inline">\(\approx 1.50 / km^2\)</span></p>
+</section>
+<section id="coucou" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>Coucou</h2>
+<ul>
+<li>C’est moi ::: {#fig-comp_resolution layout-ncol=2} <img data-src="../img/pleiade.png" id="fig-pleiade" style="width:100.0%"> <img data-src="../img/Sentinel2.png" id="fig-sentinel2" style="width:100.0%"> Comparaison entre une image PLEIADES très haute résolution (a) et une image Sentinel 2 haute résolution (b) :::</li>
+</ul>
 
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
