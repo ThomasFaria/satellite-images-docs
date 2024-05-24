@@ -360,7 +360,7 @@
 <ul>
 <li>En théorie, <span class="orange"><strong>observation de tout le territoire</strong></span> quasiment en temps réel</li>
 <li><span class="orange"><strong>Sentinel-2</strong></span> : données haute résolution en accès libre à haute fréquence temporelle. Un même territoire est couvert environ tous les 5 jours</li>
-<li>Communauté utilise ces données, ce qui donne lieu à la publication de <span class="orange"><strong>contenu open-source</strong></span> (détection de nuages, etc.)</li>
+<li>Une grande communauté utilise ces données, ce qui donne lieu à la publication de <span class="orange"><strong>contenu open-source</strong></span> (détection de nuages, etc.)</li>
 </ul>
 </section>
 <section id="une-source-de-données-à-fort-potentiel-1" class="slide level2" data-background-image="background.svg" data-background-size="contain">
@@ -393,12 +393,36 @@
 <h2>Début des travaux</h2>
 <ul>
 <li><span class="orange"><strong>Détection automatique de changements</strong></span> (apparitions, disparitions) sur le bâti dans les DROM (Mayotte)</li>
-<li>Appui pour l’<span class="orange"><strong>organisation des enquêtes cartographiques</strong></span> :
+<li>Appui pour l’<span class="orange"><strong>organisation des enquêtes cartographiques</strong></span>&nbsp;:
 <ul>
 <li>On sélectionne les <span class="blue2"><strong>îlots concernés</strong></span></li>
 <li>On récupère des données satellites couvrant ces îlots <span class="blue2"><strong>à la date de la précédente enquête</strong></span> cartographique et des <span class="blue2"><strong>données fraiches</strong></span></li>
 <li>A l’aide de la méthode développée, on repère les ilots avec <span class="blue2"><strong>beaucoup de nouveaux bâtiments</strong></span>, etc.</li>
 </ul></li>
+</ul>
+</section></section>
+<section>
+<section id="méthodologie" class="title-slide slide level1 center" data-background-image="background.svg" data-background-size="contain">
+<h1>Méthodologie</h1>
+
+</section>
+<section id="segmentation-sémantique" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>Segmentation sémantique</h2>
+
+<img data-src="../img/segmentation_exemple.png" style="width:80.0%" class="r-stretch"></section>
+<section id="de-segmentation-à-détection-de-changements" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>De segmentation à détection de changements</h2>
+
+<img data-src="../img/stratégie_segmentation.png" style="width:80.0%" class="r-stretch"></section>
+<section id="entrainement-dun-modèle" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>Entrainement d’un modèle</h2>
+<ul>
+<li>On entraîne un modèle à segmenter automatiquement à partir d’exemples annotés, il faut donc :
+<ol type="1">
+<li>Récupérer des images satellites</li>
+<li>Produire les annotations de ces images (emplacement des bâtiments)</li>
+<li>On apprend au modèle à reproduire les annotations en partant des images satellites et on espère qu’il se comportera bien sur d’autres images</li>
+</ol></li>
 </ul>
 </section></section>
 <section>
@@ -532,19 +556,6 @@
 <li>D’autres sources de données sont mobilisables pour les annotations (OpenStreetMap, annotation de google ou de microsoft) Nous avons choisi d’entraîner nos modèles sur les annotations BDTOPO.</li>
 </ul>
 </section></section>
-<section>
-<section id="méthodologie" class="title-slide slide level1 center" data-background-image="background.svg" data-background-size="contain">
-<h1>Méthodologie</h1>
-
-</section>
-<section id="segmentation-sémantique" class="slide level2" data-background-image="background.svg" data-background-size="contain">
-<h2>Segmentation sémantique</h2>
-
-<img data-src="../img/segmentation_exemple.png" style="width:80.0%" class="r-stretch"></section>
-<section id="de-segmentation-à-détection-de-changements" class="slide level2" data-background-image="background.svg" data-background-size="contain">
-<h2>De segmentation à détection de changements</h2>
-
-<img data-src="../img/stratégie_segmentation.png" style="width:80.0%" class="r-stretch"></section></section>
 <section>
 <section id="résultats-obtenus" class="title-slide slide level1 center" data-background-image="background.svg" data-background-size="contain">
 <h1>Résultats obtenus</h1>
@@ -819,14 +830,9 @@
 <h2>En résumé</h2>
 <p>Schéma reliant les 6 étapes, identifiant ce qui est automatisé et ce qui ne l’est pas</p>
 </section></section>
+<section>
 <section id="discussion" class="title-slide slide level1 center" data-background-image="background.svg" data-background-size="contain">
 <h1>Discussion</h1>
-
-</section>
-
-<section>
-<section id="test" class="title-slide slide level1 center" data-background-image="background.svg" data-background-size="contain">
-<h1>Test</h1>
 
 </section>
 <section id="discussion-1" class="slide level2" data-background-image="background.svg" data-background-size="contain">
@@ -852,9 +858,16 @@
 </section>
 <section id="maintenir-les-travaux-1" class="slide level2" data-background-image="background.svg" data-background-size="contain">
 <h2>Maintenir les travaux :</h2>
-
-<img data-src="../img/treatment_chain.png" id="fig-chain" style="width:100.0%" class="r-stretch quarto-figure-center"><p class="caption">
-</p></section>
+<div id="fig-chain" class="quarto-float quarto-figure quarto-figure-center" height="100%" width="100%">
+<figure class="quarto-float quarto-float-fig">
+<div aria-describedby="fig-chain-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="../img/treatment_chain.png" id="fig-chain" style="width:100.0%;height:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-chain-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+</figcaption>
+</figure>
+</div>
+</section>
 <section id="les-compétences-nécessaires" class="slide level2" data-background-image="background.svg" data-background-size="contain">
 <h2>Les Compétences nécessaires :</h2>
 <ul>
@@ -875,31 +888,14 @@
 <section id="ce-quil-reste-à-faire" class="slide level2" data-background-image="background.svg" data-background-size="contain">
 <h2>Ce qu’il reste à faire</h2>
 <ul>
-<li><p>Expertiser d’autres jeux de données :</p>
+<li>Expertiser d’autres jeux de données :
 <ul>
 <li>Pour les annotations</li>
 <li>Pour les images, données stéréoscopiques, Pleiades neo..</li>
 </ul></li>
-<li><p>Se rapprocher du concept de logement</p></li>
-<li><p>Maîtriser le processus d’acquisition des images, sa temporalité</p></li>
-<li><p>Expertiser les résultats de l’algorithme entraîné et faire</p></li>
-<li><p>Mesurer l’écart entre la réalité mesurer par le satellite et la réalité terrain,</p></li>
-<li><p>Travailler sur les jeux de données</p></li>
-</ul>
-</section>
-<section id="les-limites" class="slide level2" data-background-image="background.svg" data-background-size="contain">
-<h2>Les limites</h2>
-<p>Beaucoup de briques à sur</p>
-</section>
-<section id="faire-avancer-le-projet" class="slide level2" data-background-image="background.svg" data-background-size="contain">
-<h2>Faire avancer le projet :</h2>
-<p>Discussion en reprenant la pipeline pour citer les limites et les besoins parler Judith et sentinel Dire ou on en est exactement et ce qu’on a : on a pas un remplacement de l’enquete carto et on sait pas faire le recenssement de Mayotte futur du projet</p>
-<p>Facturation des images hautes résolution <span class="math inline">\(\approx 1.50 / km^2\)</span></p>
-</section>
-<section id="coucou" class="slide level2" data-background-image="background.svg" data-background-size="contain">
-<h2>Coucou</h2>
-<ul>
-<li>C’est moi ::: {#fig-comp_resolution layout-ncol=2} <img data-src="../img/pleiade.png" id="fig-pleiade" style="width:100.0%"> <img data-src="../img/Sentinel2.png" id="fig-sentinel2" style="width:100.0%"> Comparaison entre une image PLEIADES très haute résolution (a) et une image Sentinel 2 haute résolution (b) :::</li>
+<li>Se rapprocher du concept de logement</li>
+<li>Maîtriser le processus d’acquisition des images, sa temporalité</li>
+<li>Expertiser les résultats de l’algorithme entraîné et faire</li>
 </ul>
 
 <div class="quarto-auto-generated-content">

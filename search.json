@@ -25,7 +25,7 @@
     "href": "src/seminaire-dirag/index.html#une-source-de-données-à-fort-potentiel",
     "title": "Travaux exploratoires avec des données satellites : Bilan des résultats obtenus",
     "section": "Une source de données à fort potentiel",
-    "text": "Une source de données à fort potentiel\n\nEn théorie, observation de tout le territoire quasiment en temps réel\nSentinel-2 : données haute résolution en accès libre à haute fréquence temporelle. Un même territoire est couvert environ tous les 5 jours\nCommunauté utilise ces données, ce qui donne lieu à la publication de contenu open-source (détection de nuages, etc.)"
+    "text": "Une source de données à fort potentiel\n\nEn théorie, observation de tout le territoire quasiment en temps réel\nSentinel-2 : données haute résolution en accès libre à haute fréquence temporelle. Un même territoire est couvert environ tous les 5 jours\nUne grande communauté utilise ces données, ce qui donne lieu à la publication de contenu open-source (détection de nuages, etc.)"
   },
   {
     "objectID": "src/seminaire-dirag/index.html#une-source-de-données-à-fort-potentiel-1",
@@ -53,7 +53,28 @@
     "href": "src/seminaire-dirag/index.html#début-des-travaux",
     "title": "Travaux exploratoires avec des données satellites : Bilan des résultats obtenus",
     "section": "Début des travaux",
-    "text": "Début des travaux\n\nDétection automatique de changements (apparitions, disparitions) sur le bâti dans les DROM (Mayotte)\nAppui pour l’organisation des enquêtes cartographiques :\n\nOn sélectionne les îlots concernés\nOn récupère des données satellites couvrant ces îlots à la date de la précédente enquête cartographique et des données fraiches\nA l’aide de la méthode développée, on repère les ilots avec beaucoup de nouveaux bâtiments, etc."
+    "text": "Début des travaux\n\nDétection automatique de changements (apparitions, disparitions) sur le bâti dans les DROM (Mayotte)\nAppui pour l’organisation des enquêtes cartographiques :\n\nOn sélectionne les îlots concernés\nOn récupère des données satellites couvrant ces îlots à la date de la précédente enquête cartographique et des données fraiches\nA l’aide de la méthode développée, on repère les ilots avec beaucoup de nouveaux bâtiments, etc."
+  },
+  {
+    "objectID": "src/seminaire-dirag/index.html#segmentation-sémantique",
+    "href": "src/seminaire-dirag/index.html#segmentation-sémantique",
+    "title": "Travaux exploratoires avec des données satellites : Bilan des résultats obtenus",
+    "section": "Segmentation sémantique",
+    "text": "Segmentation sémantique"
+  },
+  {
+    "objectID": "src/seminaire-dirag/index.html#de-segmentation-à-détection-de-changements",
+    "href": "src/seminaire-dirag/index.html#de-segmentation-à-détection-de-changements",
+    "title": "Travaux exploratoires avec des données satellites : Bilan des résultats obtenus",
+    "section": "De segmentation à détection de changements",
+    "text": "De segmentation à détection de changements"
+  },
+  {
+    "objectID": "src/seminaire-dirag/index.html#entrainement-dun-modèle",
+    "href": "src/seminaire-dirag/index.html#entrainement-dun-modèle",
+    "title": "Travaux exploratoires avec des données satellites : Bilan des résultats obtenus",
+    "section": "Entrainement d’un modèle",
+    "text": "Entrainement d’un modèle\n\nOn entraîne un modèle à segmenter automatiquement à partir d’exemples annotés, il faut donc :\n\nRécupérer des images satellites\nProduire les annotations de ces images (emplacement des bâtiments)\nOn apprend au modèle à reproduire les annotations en partant des images satellites et on espère qu’il se comportera bien sur d’autres images"
   },
   {
     "objectID": "src/seminaire-dirag/index.html#quest-ce-quune-image",
@@ -145,20 +166,6 @@
     "title": "Travaux exploratoires avec des données satellites : Bilan des résultats obtenus",
     "section": "Comparaison BDTOPO/RIL",
     "text": "Comparaison BDTOPO/RIL\n\nFinalement, le RIL nous permet d’avoir des points millésimés précisément mais les approximations de contours de logements sont grossières\nLa BDTOPO est moins “millésimable” mais les contours de bâtis sont plus précis\nD’autres sources de données sont mobilisables pour les annotations (OpenStreetMap, annotation de google ou de microsoft) Nous avons choisi d’entraîner nos modèles sur les annotations BDTOPO."
-  },
-  {
-    "objectID": "src/seminaire-dirag/index.html#segmentation-sémantique",
-    "href": "src/seminaire-dirag/index.html#segmentation-sémantique",
-    "title": "Travaux exploratoires avec des données satellites : Bilan des résultats obtenus",
-    "section": "Segmentation sémantique",
-    "text": "Segmentation sémantique"
-  },
-  {
-    "objectID": "src/seminaire-dirag/index.html#de-segmentation-à-détection-de-changements",
-    "href": "src/seminaire-dirag/index.html#de-segmentation-à-détection-de-changements",
-    "title": "Travaux exploratoires avec des données satellites : Bilan des résultats obtenus",
-    "section": "De segmentation à détection de changements",
-    "text": "De segmentation à détection de changements"
   },
   {
     "objectID": "src/seminaire-dirag/index.html#résultats-de-mayotte",
@@ -368,27 +375,6 @@
     "href": "src/seminaire-dirag/index.html#ce-quil-reste-à-faire",
     "title": "Travaux exploratoires avec des données satellites : Bilan des résultats obtenus",
     "section": "Ce qu’il reste à faire",
-    "text": "Ce qu’il reste à faire\n\nExpertiser d’autres jeux de données :\n\nPour les annotations\nPour les images, données stéréoscopiques, Pleiades neo..\n\nSe rapprocher du concept de logement\nMaîtriser le processus d’acquisition des images, sa temporalité\nExpertiser les résultats de l’algorithme entraîné et faire\nMesurer l’écart entre la réalité mesurer par le satellite et la réalité terrain,\nTravailler sur les jeux de données"
-  },
-  {
-    "objectID": "src/seminaire-dirag/index.html#les-limites",
-    "href": "src/seminaire-dirag/index.html#les-limites",
-    "title": "Travaux exploratoires avec des données satellites : Bilan des résultats obtenus",
-    "section": "Les limites",
-    "text": "Les limites\nBeaucoup de briques à sur"
-  },
-  {
-    "objectID": "src/seminaire-dirag/index.html#faire-avancer-le-projet",
-    "href": "src/seminaire-dirag/index.html#faire-avancer-le-projet",
-    "title": "Travaux exploratoires avec des données satellites : Bilan des résultats obtenus",
-    "section": "Faire avancer le projet :",
-    "text": "Faire avancer le projet :\nDiscussion en reprenant la pipeline pour citer les limites et les besoins parler Judith et sentinel Dire ou on en est exactement et ce qu’on a : on a pas un remplacement de l’enquete carto et on sait pas faire le recenssement de Mayotte futur du projet\nFacturation des images hautes résolution \\(\\approx 1.50 / km^2\\)"
-  },
-  {
-    "objectID": "src/seminaire-dirag/index.html#coucou",
-    "href": "src/seminaire-dirag/index.html#coucou",
-    "title": "Travaux exploratoires avec des données satellites : Bilan des résultats obtenus",
-    "section": "Coucou",
-    "text": "Coucou\n\nC’est moi ::: {#fig-comp_resolution layout-ncol=2}   Comparaison entre une image PLEIADES très haute résolution (a) et une image Sentinel 2 haute résolution (b) :::"
+    "text": "Ce qu’il reste à faire\n\nExpertiser d’autres jeux de données :\n\nPour les annotations\nPour les images, données stéréoscopiques, Pleiades neo..\n\nSe rapprocher du concept de logement\nMaîtriser le processus d’acquisition des images, sa temporalité\nExpertiser les résultats de l’algorithme entraîné et faire"
   }
 ]
