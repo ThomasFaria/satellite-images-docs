@@ -95,7 +95,7 @@
     "href": "src/seminaire-dirag/index.html#caractéristiques-dune-image-satellite",
     "title": "Travaux exploratoires avec des données satellites : Bilan des résultats obtenus",
     "section": "Caractéristiques d’une image satellite",
-    "text": "Caractéristiques d’une image satellite\nPlusieurs caractéristiques existent pour une image satellite :\n\nLa résolution spatiale : le nombre de mètres couverts par un pixel\nLa fréquence d’acquisition : fréquence des prises de vue pour un même endroit\nLa résolution spectrale : nombre de bandes\nLa couverture géographique\n\nLa couverture géographique nous intéressent tout particulièrement ici !"
+    "text": "Caractéristiques d’une image satellite\nPlusieurs caractéristiques existent pour une image satellite :\n\nLa résolution spatiale\nLa fréquence d’acquisition\nLa résolution spectrale\nLa couverture géographique\n\nLa fréquence d’acquisition et la couverture géographique nous intéressent tout particulièrement ici !"
   },
   {
     "objectID": "src/seminaire-dirag/index.html#images-satellite-à-notre-disposition",
@@ -116,21 +116,21 @@
     "href": "src/seminaire-dirag/index.html#images-sentinel2",
     "title": "Travaux exploratoires avec des données satellites : Bilan des résultats obtenus",
     "section": "Images Sentinel2",
-    "text": "Images Sentinel2\n\nFréquence d’acquisition : tous les 5 jours et gratuit\nRésolution spectrale : 13\nRésolution spatiale : un pixel = 10x10 m\nTaille d’une image : 250*250 pixels = 0.625 km²"
+    "text": "Images Sentinel2\n\nFréquence d’acquisition : tous les 5 jours et gratuit\nRésolution spectrale : 13\nRésolution spatiale : un pixel = 10x10 m\nTaille d’une image : 250*250 pixels = 6.25 km²"
   },
   {
     "objectID": "src/seminaire-dirag/index.html#pléiades-vs-sentinel-2",
     "href": "src/seminaire-dirag/index.html#pléiades-vs-sentinel-2",
     "title": "Travaux exploratoires avec des données satellites : Bilan des résultats obtenus",
     "section": "Pléiades vs Sentinel-2",
-    "text": "Pléiades vs Sentinel-2\n\n\n\n\n\n\n\n\n\nPleiades\n\n\n\n\n\n\n\nSentinel2\n\n\n\n\n\n\nPleiades © CNES_2022, Distribution AIRBUS DS\n\n\n\nNous allons nous focaliser sur les images Pléiades pour cette présentation."
+    "text": "Pléiades vs Sentinel-2\n\n\n\n\n\n\n\n\n\nPleiades\n\n\n\n\n\n\n\nSentinel2\n\n\n\n\n\n\nPleiades © CNES_2022, Distribution AIRBUS DS"
   },
   {
     "objectID": "src/seminaire-dirag/index.html#sources-dannotations-de-bâtiments",
     "href": "src/seminaire-dirag/index.html#sources-dannotations-de-bâtiments",
     "title": "Travaux exploratoires avec des données satellites : Bilan des résultats obtenus",
     "section": "Sources d’annotations de bâtiments",
-    "text": "Sources d’annotations de bâtiments\nObtenir ces annotations peut être coûteux, mais on dispose de données permettant de s’approcher :\n\nLe RIL (INSEE)\nLa BDTOPO (IGN)"
+    "text": "Sources d’annotations de bâtiments\nObtenir ces annotations peut être coûteux, mais on dispose de données permettant de s’approcher :\n\nLa BDTOPO (IGN)\nLe RIL (INSEE)"
   },
   {
     "objectID": "src/seminaire-dirag/index.html#la-bdtopo",
@@ -165,7 +165,7 @@
     "href": "src/seminaire-dirag/index.html#comparaison-bdtoporil",
     "title": "Travaux exploratoires avec des données satellites : Bilan des résultats obtenus",
     "section": "Comparaison BDTOPO/RIL",
-    "text": "Comparaison BDTOPO/RIL\n\nFinalement, le RIL nous permet d’avoir des points millésimés précisément mais les approximations de contours de logements sont grossières\nLa BDTOPO est moins “millésimable” mais les contours de bâtis sont plus précis\nD’autres sources de données sont mobilisables pour les annotations (OpenStreetMap, annotation de google ou de microsoft) Nous avons choisi d’entraîner nos modèles sur les annotations BDTOPO."
+    "text": "Comparaison BDTOPO/RIL\n\nFinalement, le RIL nous permet d’avoir des points millésimés précisément mais les approximations de contours de logements sont grossières\nLa BDTOPO est moins “millésimable” mais les contours de bâtis sont plus précis\nD’autres sources de données sont mobilisables pour les annotations (OpenStreetMap, annotations OpenBuildings de Google ou GlobalMLBuildingFootprints de Microsoft) Nous avons choisi d’entraîner nos modèles sur les annotations BDTOPO."
   },
   {
     "objectID": "src/seminaire-dirag/index.html#résultats-de-mayotte",

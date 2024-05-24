@@ -446,12 +446,12 @@
 <h2>Caractéristiques d’une image satellite</h2>
 <p>Plusieurs caractéristiques existent pour une image satellite&nbsp;:</p>
 <ul>
-<li><strong>La résolution spatiale :</strong> le nombre de mètres couverts par un pixel</li>
-<li><strong>La fréquence d’acquisition :</strong> fréquence des prises de vue pour un même endroit</li>
-<li><strong>La résolution spectrale :</strong> nombre de bandes</li>
-<li><strong>La couverture géographique</strong></li>
+<li><span class="orange"><strong>La résolution spatiale</strong></span></li>
+<li><span class="orange"><strong>La fréquence d’acquisition</strong></span></li>
+<li><span class="orange"><strong>La résolution spectrale</strong></span></li>
+<li><span class="orange"><strong>La couverture géographique</strong></span></li>
 </ul>
-<p>La <span class="blue2"><strong>couverture géographique</strong></span> nous intéressent tout particulièrement ici !</p>
+<p>La <span class="orange"><strong>fréquence d’acquisition</strong></span> et la <span class="blue2"><strong>couverture géographique</strong></span> nous intéressent tout particulièrement ici !</p>
 </section>
 <section id="images-satellite-à-notre-disposition" class="slide level2" data-background-image="background.svg" data-background-size="contain">
 <h2>Images satellite à notre disposition</h2>
@@ -479,7 +479,7 @@
 <li><p><strong>Fréquence d’acquisition</strong> : <span class="orange">tous les 5 jours</span> et gratuit</p></li>
 <li><p><strong>Résolution spectrale</strong> : 13</p></li>
 <li><p><strong>Résolution spatiale</strong> : <span class="blue2">un pixel = 10x10 m</span></p></li>
-<li><p>Taille d’une image : 250*250 pixels = 0.625 km²</p></li>
+<li><p>Taille d’une image : 250*250 pixels = 6.25 km²</p></li>
 </ul>
 </section>
 <section id="pléiades-vs-sentinel-2" class="slide level2" data-background-image="background.svg" data-background-size="contain">
@@ -512,20 +512,19 @@
 </div>
 </div>
 </div>
-<p>Nous allons nous focaliser sur les images Pléiades pour cette présentation.</p>
 </section>
 <section id="sources-dannotations-de-bâtiments" class="slide level2" data-background-image="background.svg" data-background-size="contain">
 <h2>Sources d’annotations de bâtiments</h2>
 <p>Obtenir ces annotations peut être coûteux, mais on dispose de données permettant de s’approcher :</p>
 <ul>
-<li><p>Le RIL (INSEE)</p></li>
-<li><p>La BDTOPO (IGN)</p></li>
+<li><p>La <span class="orange"><strong>BDTOPO</strong></span> (IGN)</p></li>
+<li><p>Le <span class="blue2"><strong>RIL</strong></span> (INSEE)</p></li>
 </ul>
 </section>
 <section id="la-bdtopo" class="slide level2" data-background-image="background.svg" data-background-size="contain">
 <h2>La BDTOPO</h2>
 <ul>
-<li>Annotation d’un bâtiment = <span class="blue2">un polygone</span></li>
+<li>Annotation d’un bâtiment = <span class="blue2"><strong>un polygone</strong></span></li>
 <li>Elle est construite à partir d’ortho-photos de l’IGN (prises de vue aériennes)</li>
 <li>Difficile à ce stade d’avoir une information millésimée</li>
 </ul>
@@ -537,7 +536,7 @@
 <section id="le-ril" class="slide level2" data-background-image="background.svg" data-background-size="contain">
 <h2>Le RIL</h2>
 <ul>
-<li>Annotation d’un bâtiment = <span class="orange">un carré</span> qui pointe sur le bâtiment (et non polygone)</li>
+<li>Annotation d’un bâtiment = <span class="orange"><strong>un carré</strong></span> qui pointe sur le bâtiment (et non polygone)</li>
 <li>Le répertoire des immeubles localisés est une base de sondage utilisée pour le RP</li>
 <li>Dans les DOMs, peu ou pas de permis de construire</li>
 <li>L’enquête cartographique met à jour 1/5 des logements dans le territoire (5 groupes de rotation, 1 îlot approximativement 1 GR)</li>
@@ -552,8 +551,8 @@
 <h2>Comparaison BDTOPO/RIL</h2>
 <ul>
 <li>Finalement, le RIL nous permet d’avoir des points millésimés précisément mais les approximations de contours de logements sont grossières</li>
-<li>La BDTOPO est moins “millésimable” mais <span class="orange">les contours de bâtis sont plus précis</span></li>
-<li>D’autres sources de données sont mobilisables pour les annotations (OpenStreetMap, annotation de google ou de microsoft) Nous avons choisi d’entraîner nos modèles sur les annotations BDTOPO.</li>
+<li>La BDTOPO est moins “millésimable” mais <span class="orange"><strong>les contours de bâtis sont plus précis</strong></span></li>
+<li>D’autres sources de données sont mobilisables pour les annotations (OpenStreetMap, annotations OpenBuildings de Google ou GlobalMLBuildingFootprints de Microsoft) Nous avons choisi d’entraîner nos modèles sur les annotations BDTOPO.</li>
 </ul>
 </section></section>
 <section>
