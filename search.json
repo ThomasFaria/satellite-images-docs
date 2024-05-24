@@ -63,18 +63,18 @@
     "text": "Segmentation sémantique"
   },
   {
+    "objectID": "src/seminaire-dirag/index.html#entrainement-dun-modèle-de-segmentation",
+    "href": "src/seminaire-dirag/index.html#entrainement-dun-modèle-de-segmentation",
+    "title": "Travaux exploratoires avec des données satellites : Bilan des résultats obtenus",
+    "section": "Entrainement d’un modèle de segmentation",
+    "text": "Entrainement d’un modèle de segmentation\n\nOn entraîne un modèle à segmenter automatiquement à partir d’exemples annotés. Pour cela il faut :\n\nCollecter des images satellites\nProduire les annotations de ces images (emplacement des bâtiments)\n\nOn apprend au modèle à reproduire les annotations en partant des images. On espère qu’il pourra généraliser à d’autres images"
+  },
+  {
     "objectID": "src/seminaire-dirag/index.html#de-segmentation-à-détection-de-changements",
     "href": "src/seminaire-dirag/index.html#de-segmentation-à-détection-de-changements",
     "title": "Travaux exploratoires avec des données satellites : Bilan des résultats obtenus",
     "section": "De segmentation à détection de changements",
     "text": "De segmentation à détection de changements"
-  },
-  {
-    "objectID": "src/seminaire-dirag/index.html#entrainement-dun-modèle",
-    "href": "src/seminaire-dirag/index.html#entrainement-dun-modèle",
-    "title": "Travaux exploratoires avec des données satellites : Bilan des résultats obtenus",
-    "section": "Entrainement d’un modèle",
-    "text": "Entrainement d’un modèle\n\nOn entraîne un modèle à segmenter automatiquement à partir d’exemples annotés, il faut donc :\n\nRécupérer des images satellites\nProduire les annotations de ces images (emplacement des bâtiments)\nOn apprend au modèle à reproduire les annotations en partant des images satellites et on espère qu’il se comportera bien sur d’autres images"
   },
   {
     "objectID": "src/seminaire-dirag/index.html#quest-ce-quune-image",

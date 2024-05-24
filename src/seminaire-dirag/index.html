@@ -410,21 +410,21 @@
 <h2>Segmentation sémantique</h2>
 
 <img data-src="../img/segmentation_exemple.png" style="width:80.0%" class="r-stretch"></section>
+<section id="entrainement-dun-modèle-de-segmentation" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>Entrainement d’un modèle de segmentation</h2>
+<ul>
+<li>On entraîne un modèle à segmenter automatiquement <span class="orange"><strong>à partir d’exemples annotés</strong></span>. Pour cela il faut :
+<ul>
+<li><span class="blue2"><strong>Collecter</strong></span> des images satellites</li>
+<li><span class="blue2"><strong>Produire les annotations</strong></span> de ces images (emplacement des bâtiments)</li>
+</ul></li>
+<li>On apprend au modèle à reproduire les annotations en partant des images. On espère qu’il pourra <span class="orange"><strong>généraliser</strong></span> à d’autres images</li>
+</ul>
+</section>
 <section id="de-segmentation-à-détection-de-changements" class="slide level2" data-background-image="background.svg" data-background-size="contain">
 <h2>De segmentation à détection de changements</h2>
 
-<img data-src="../img/stratégie_segmentation.png" style="width:80.0%" class="r-stretch"></section>
-<section id="entrainement-dun-modèle" class="slide level2" data-background-image="background.svg" data-background-size="contain">
-<h2>Entrainement d’un modèle</h2>
-<ul>
-<li>On entraîne un modèle à segmenter automatiquement à partir d’exemples annotés, il faut donc :
-<ol type="1">
-<li>Récupérer des images satellites</li>
-<li>Produire les annotations de ces images (emplacement des bâtiments)</li>
-<li>On apprend au modèle à reproduire les annotations en partant des images satellites et on espère qu’il se comportera bien sur d’autres images</li>
-</ol></li>
-</ul>
-</section></section>
+<img data-src="../img/stratégie_segmentation.png" style="width:80.0%" class="r-stretch"></section></section>
 <section>
 <section id="les-données" class="title-slide slide level1 center" data-background-image="background.svg" data-background-size="contain">
 <h1>Les données</h1>
@@ -858,7 +858,7 @@
 </section>
 <section id="maintenir-les-travaux-1" class="slide level2" data-background-image="background.svg" data-background-size="contain">
 <h2>Maintenir les travaux :</h2>
-<div id="fig-chain" class="quarto-float quarto-figure quarto-figure-center" width="100%" height="100%">
+<div id="fig-chain" class="quarto-float quarto-figure quarto-figure-center" height="100%" width="100%">
 <figure class="quarto-float quarto-float-fig">
 <div aria-describedby="fig-chain-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img data-src="../img/treatment_chain.png" id="fig-chain" style="width:100.0%;height:100.0%">
