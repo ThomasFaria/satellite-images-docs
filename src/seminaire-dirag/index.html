@@ -513,48 +513,41 @@
 </div>
 </div>
 </section>
-<section id="sources-dannotations-de-bâtiments" class="slide level2" data-background-image="background.svg" data-background-size="contain">
-<h2>Sources d’annotations de bâtiments</h2>
-<p>Obtenir ces annotations peut être coûteux, mais on dispose de données permettant de s’approcher :</p>
+<section id="sources-disponibles-de-localisation-de-bâtiments" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>Sources disponibles de localisation de bâtiments</h2>
+<p>Deux sources d’annotations envisagées pour les bâtiments :</p>
 <ul>
-<li><p>La <span class="orange"><strong>BDTOPO</strong></span> (IGN)</p></li>
-<li><p>Le <span class="blue2"><strong>RIL</strong></span> (INSEE)</p></li>
+<li>Le <span class="blue2"><strong>RIL</strong></span> (INSEE)</li>
+<li>La <span class="orange"><strong>BDTOPO</strong></span> (IGN)</li>
 </ul>
 </section>
-<section id="la-bdtopo" class="slide level2" data-background-image="background.svg" data-background-size="contain">
-<h2>La BDTOPO</h2>
-<ul>
-<li>Annotation d’un bâtiment = <span class="blue2"><strong>un polygone</strong></span></li>
-<li>Elle est construite à partir d’ortho-photos de l’IGN (prises de vue aériennes)</li>
-<li>Difficile à ce stade d’avoir une information millésimée</li>
-</ul>
-</section>
-<section id="exemple-dannotations-bdtopo" class="slide level2" data-background-image="background.svg" data-background-size="contain">
-<h2>Exemple d’annotations BDTOPO</h2>
-
-<img data-src="../img/masqueBDTOPO.png" style="width:75.0%" class="r-stretch quarto-figure-center"><p class="caption">Masque BDTOPO</p></section>
 <section id="le-ril" class="slide level2" data-background-image="background.svg" data-background-size="contain">
 <h2>Le RIL</h2>
 <ul>
-<li>Annotation d’un bâtiment = <span class="orange"><strong>un carré</strong></span> qui pointe sur le bâtiment (et non polygone)</li>
-<li>Le répertoire des immeubles localisés est une base de sondage utilisée pour le RP</li>
-<li>Dans les DOMs, peu ou pas de permis de construire</li>
-<li>L’enquête cartographique met à jour 1/5 des logements dans le territoire (5 groupes de rotation, 1 îlot approximativement 1 GR)</li>
-<li>Enquête cartographique réalisée d’avril à août sur une année donnée</li>
+<li>Annotation d’un bâtiment = <span class="orange"><strong>un point</strong></span> qui donne l’emplacement du bâtiment (porte d’entrée ?)</li>
+<li>Le répertoire des immeubles localisés est une base de sondage actualisée dans les DOM par l’enquête cartographique</li>
+<li>Annotations en quantité limitée : l’enquête cartographique ne met à jour qu’un cinquième des logements du RIL dans les DOM</li>
+<li>Concept de logement</li>
 </ul>
 </section>
 <section id="exemple-dannotations-ril" class="slide level2" data-background-image="background.svg" data-background-size="contain">
 <h2>Exemple d’annotations RIL</h2>
 
 <img data-src="../img/masqueRIL.png" style="width:75.0%" class="r-stretch quarto-figure-center"><p class="caption">Masque RIL</p></section>
-<section id="comparaison-bdtoporil" class="slide level2" data-background-image="background.svg" data-background-size="contain">
-<h2>Comparaison BDTOPO/RIL</h2>
+<section id="la-bdtopo" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>La BDTOPO</h2>
 <ul>
-<li>Finalement, le RIL nous permet d’avoir des points millésimés précisément mais les approximations de contours de logements sont grossières</li>
-<li>La BDTOPO est moins “millésimable” mais <span class="orange"><strong>les contours de bâtis sont plus précis</strong></span></li>
-<li>D’autres sources de données sont mobilisables pour les annotations (OpenStreetMap, annotations OpenBuildings de Google ou GlobalMLBuildingFootprints de Microsoft) Nous avons choisi d’entraîner nos modèles sur les annotations BDTOPO.</li>
+<li>Annotation d’un bâtiment = <span class="blue2"><strong>un polygone</strong></span></li>
+<li>Elle est construite à partir de plusieurs sources, notamment à partir d’ortho-photos de l’IGN (prises de vue aériennes)</li>
+<li>Les éléments de la BDTOPO produite une année donnée ne sont pas datés précisément</li>
+<li>La BDTOPO n’est pas synchronisée avec les images PLEIADES que l’INSEE acquiert</li>
+<li>On retient tout de même la BDTOPO pour annoter les images PLEIADES</li>
 </ul>
-</section></section>
+</section>
+<section id="exemple-dannotations-bdtopo" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>Exemple d’annotations BDTOPO</h2>
+
+<img data-src="../img/masqueBDTOPO.png" style="width:75.0%" class="r-stretch quarto-figure-center"><p class="caption">Masque BDTOPO</p></section></section>
 <section>
 <section id="résultats-obtenus" class="title-slide slide level1 center" data-background-image="background.svg" data-background-size="contain">
 <h1>Résultats obtenus</h1>

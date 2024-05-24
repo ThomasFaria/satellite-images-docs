@@ -126,32 +126,18 @@
     "text": "Pléiades vs Sentinel-2\n\n\n\n\n\n\n\n\n\nPleiades\n\n\n\n\n\n\n\nSentinel2\n\n\n\n\n\n\nPleiades © CNES_2022, Distribution AIRBUS DS"
   },
   {
-    "objectID": "src/seminaire-dirag/index.html#sources-dannotations-de-bâtiments",
-    "href": "src/seminaire-dirag/index.html#sources-dannotations-de-bâtiments",
+    "objectID": "src/seminaire-dirag/index.html#sources-disponibles-de-localisation-de-bâtiments",
+    "href": "src/seminaire-dirag/index.html#sources-disponibles-de-localisation-de-bâtiments",
     "title": "Travaux exploratoires avec des données satellites : Bilan des résultats obtenus",
-    "section": "Sources d’annotations de bâtiments",
-    "text": "Sources d’annotations de bâtiments\nObtenir ces annotations peut être coûteux, mais on dispose de données permettant de s’approcher :\n\nLa BDTOPO (IGN)\nLe RIL (INSEE)"
-  },
-  {
-    "objectID": "src/seminaire-dirag/index.html#la-bdtopo",
-    "href": "src/seminaire-dirag/index.html#la-bdtopo",
-    "title": "Travaux exploratoires avec des données satellites : Bilan des résultats obtenus",
-    "section": "La BDTOPO",
-    "text": "La BDTOPO\n\nAnnotation d’un bâtiment = un polygone\nElle est construite à partir d’ortho-photos de l’IGN (prises de vue aériennes)\nDifficile à ce stade d’avoir une information millésimée"
-  },
-  {
-    "objectID": "src/seminaire-dirag/index.html#exemple-dannotations-bdtopo",
-    "href": "src/seminaire-dirag/index.html#exemple-dannotations-bdtopo",
-    "title": "Travaux exploratoires avec des données satellites : Bilan des résultats obtenus",
-    "section": "Exemple d’annotations BDTOPO",
-    "text": "Exemple d’annotations BDTOPO\n\nMasque BDTOPO"
+    "section": "Sources disponibles de localisation de bâtiments",
+    "text": "Sources disponibles de localisation de bâtiments\nDeux sources d’annotations envisagées pour les bâtiments :\n\nLe RIL (INSEE)\nLa BDTOPO (IGN)"
   },
   {
     "objectID": "src/seminaire-dirag/index.html#le-ril",
     "href": "src/seminaire-dirag/index.html#le-ril",
     "title": "Travaux exploratoires avec des données satellites : Bilan des résultats obtenus",
     "section": "Le RIL",
-    "text": "Le RIL\n\nAnnotation d’un bâtiment = un carré qui pointe sur le bâtiment (et non polygone)\nLe répertoire des immeubles localisés est une base de sondage utilisée pour le RP\nDans les DOMs, peu ou pas de permis de construire\nL’enquête cartographique met à jour 1/5 des logements dans le territoire (5 groupes de rotation, 1 îlot approximativement 1 GR)\nEnquête cartographique réalisée d’avril à août sur une année donnée"
+    "text": "Le RIL\n\nAnnotation d’un bâtiment = un point qui donne l’emplacement du bâtiment (porte d’entrée ?)\nLe répertoire des immeubles localisés est une base de sondage actualisée dans les DOM par l’enquête cartographique\nAnnotations en quantité limitée : l’enquête cartographique ne met à jour qu’un cinquième des logements du RIL dans les DOM\nConcept de logement"
   },
   {
     "objectID": "src/seminaire-dirag/index.html#exemple-dannotations-ril",
@@ -161,11 +147,18 @@
     "text": "Exemple d’annotations RIL\n\nMasque RIL"
   },
   {
-    "objectID": "src/seminaire-dirag/index.html#comparaison-bdtoporil",
-    "href": "src/seminaire-dirag/index.html#comparaison-bdtoporil",
+    "objectID": "src/seminaire-dirag/index.html#la-bdtopo",
+    "href": "src/seminaire-dirag/index.html#la-bdtopo",
     "title": "Travaux exploratoires avec des données satellites : Bilan des résultats obtenus",
-    "section": "Comparaison BDTOPO/RIL",
-    "text": "Comparaison BDTOPO/RIL\n\nFinalement, le RIL nous permet d’avoir des points millésimés précisément mais les approximations de contours de logements sont grossières\nLa BDTOPO est moins “millésimable” mais les contours de bâtis sont plus précis\nD’autres sources de données sont mobilisables pour les annotations (OpenStreetMap, annotations OpenBuildings de Google ou GlobalMLBuildingFootprints de Microsoft) Nous avons choisi d’entraîner nos modèles sur les annotations BDTOPO."
+    "section": "La BDTOPO",
+    "text": "La BDTOPO\n\nAnnotation d’un bâtiment = un polygone\nElle est construite à partir de plusieurs sources, notamment à partir d’ortho-photos de l’IGN (prises de vue aériennes)\nLes éléments de la BDTOPO produite une année donnée ne sont pas datés précisément\nLa BDTOPO n’est pas synchronisée avec les images PLEIADES que l’INSEE acquiert\nOn retient tout de même la BDTOPO pour annoter les images PLEIADES"
+  },
+  {
+    "objectID": "src/seminaire-dirag/index.html#exemple-dannotations-bdtopo",
+    "href": "src/seminaire-dirag/index.html#exemple-dannotations-bdtopo",
+    "title": "Travaux exploratoires avec des données satellites : Bilan des résultats obtenus",
+    "section": "Exemple d’annotations BDTOPO",
+    "text": "Exemple d’annotations BDTOPO\n\nMasque BDTOPO"
   },
   {
     "objectID": "src/seminaire-dirag/index.html#résultats-de-mayotte",
