@@ -284,7 +284,7 @@
     "href": "src/seminaire-dirag/index.html#etape-2-nettoyage-et-annotation-des-images-recueillis",
     "title": "Travaux exploratoires avec des données satellites : Bilan des résultats obtenus",
     "section": "Etape 2 : Nettoyage et annotation des images recueillis",
-    "text": "Etape 2 : Nettoyage et annotation des images recueillis\n\nPipeline Python  pour formatter les images brutes :\n\nSélection des images pour une zone d’intérêt\nSuppresion des images ennuagées\nDécoupage des images \\(125m \\times 125m\\)\n\nPipeline de labellisation des images satellites avec la BDTOPO\nAutomatisation avec Argo Workflow"
+    "text": "Etape 2 : Nettoyage et annotation des images recueillis\n\nPipeline Python  pour formatter les images brutes :\n\nSélection des images pour une zone d’intérêt\nSuppression des images ennuagées\nDécoupage des images \\(125m \\times 125m\\)\n\nPipeline de labellisation des images satellites avec la BDTOPO\nAutomatisation avec Argo Workflow"
   },
   {
     "objectID": "src/seminaire-dirag/index.html#etape-3-modélisation-et-entraînement",
@@ -322,25 +322,11 @@
     "text": "En résumé\n\n🛠️ Multitudes d’outils à utiliser :\n\nKubernetes, Docker, stockage MinIO, API, ArgoCD, Argo Workflow, MLFlow, React…\n\n… mais dont le coût d’apprentissage est rapidement rentabilisé :\n\nTechnologies “state of the art”\nDe plus en plus utilisées à l’Insee (LS3)"
   },
   {
-    "objectID": "src/seminaire-dirag/index.html#en-résumé-1",
-    "href": "src/seminaire-dirag/index.html#en-résumé-1",
-    "title": "Travaux exploratoires avec des données satellites : Bilan des résultats obtenus",
-    "section": "En résumé",
-    "text": "En résumé\nSchéma reliant les 6 étapes, identifiant ce qui est automatisé et ce qui ne l’est pas"
-  },
-  {
-    "objectID": "src/seminaire-dirag/index.html#discussion-1",
-    "href": "src/seminaire-dirag/index.html#discussion-1",
-    "title": "Travaux exploratoires avec des données satellites : Bilan des résultats obtenus",
-    "section": "Discussion",
-    "text": "Discussion\n\nOpportunités pour l’enquête cartographique\n\nPremière utilisation des algorithmes effectuées par la DMTR pour prioriser l’envoi d’agents sur le terrain\nOpportunité pour le soutien des estimations de population à Mayotte"
-  },
-  {
     "objectID": "src/seminaire-dirag/index.html#maintenir-les-travaux",
     "href": "src/seminaire-dirag/index.html#maintenir-les-travaux",
     "title": "Travaux exploratoires avec des données satellites : Bilan des résultats obtenus",
     "section": "Maintenir les travaux :",
-    "text": "Maintenir les travaux :\n\nLe produit final, s’appuie sur un bon nombre de briques :\n\nTraitements des données (images, données Insee)\nEntraînement des algorithmes de Deep Learning\nProduction des prédictions via API\nMise en valeur des résultats (application WEB et mise en place d’un Geoserver)"
+    "text": "Maintenir les travaux :\n\nLe produit final s’appuie sur un bon nombre de briques :\n\nTraitements des données (images, données Insee)\nEntraînement des algorithmes de Deep Learning\nProduction des prédictions via API\nMise en valeur des résultats (application WEB et mise en place d’un Geoserver)\n\nCoût de maintenance élevé ! Compétences rares à l’INSEE (ou ailleurs ?)"
   },
   {
     "objectID": "src/seminaire-dirag/index.html#maintenir-les-travaux-1",
@@ -350,24 +336,38 @@
     "text": "Maintenir les travaux :"
   },
   {
-    "objectID": "src/seminaire-dirag/index.html#les-compétences-nécessaires",
-    "href": "src/seminaire-dirag/index.html#les-compétences-nécessaires",
+    "objectID": "src/seminaire-dirag/index.html#ce-quon-a-obtenu",
+    "href": "src/seminaire-dirag/index.html#ce-quon-a-obtenu",
     "title": "Travaux exploratoires avec des données satellites : Bilan des résultats obtenus",
-    "section": "Les Compétences nécessaires :",
-    "text": "Les Compétences nécessaires :\n\ncompétences en analyse spatiale\nDéveloppement d’application web\nVeille technique, rester à la pointe en Machine Learning\nveille sur les données, annotations etc.."
+    "section": "Ce qu’on a obtenu",
+    "text": "Ce qu’on a obtenu\n\nRésultats prometteurs pour le soutien de l’enquête cartographique\n\nPremière utilisation des algorithmes effectuée par la DMTR pour prioriser l’envoi d’agents sur le terrain\nOpportunité pour le soutien des estimations de population à Mayotte\nParti pris de présenter une chaîne complète de production en guise de POC !\nChoix rapides \\(\\longrightarrow\\) plein d’améliorations possibles"
   },
   {
-    "objectID": "src/seminaire-dirag/index.html#ce-quon-sait-faire",
-    "href": "src/seminaire-dirag/index.html#ce-quon-sait-faire",
+    "objectID": "src/seminaire-dirag/index.html#améliorations-possibles",
+    "href": "src/seminaire-dirag/index.html#améliorations-possibles",
     "title": "Travaux exploratoires avec des données satellites : Bilan des résultats obtenus",
-    "section": "Ce qu’on sait faire :",
-    "text": "Ce qu’on sait faire :\n\nL’algorithme entraîné permet de mesurer l’évolution du bâti \\(\\longrightarrow\\) Peut soutenir l’enquête cartographique\n\nEstimations frustre de population réalisable, à partir des évolutions de bâti, a minima pour"
+    "section": "Améliorations possibles",
+    "text": "Améliorations possibles\n\nAcquisition:\n\nLes données Pleiades dont nous disposons sont fournies par l’IGN et sont grossièrement datées à l’année\nTravail à fournir pour maîtriser l’acquisition de données PLEIADES (notamment le temps)\nIndispensable si on veut des estimations précisément datées\n\nPré-traitement des données satellites: Les premières briques de prétraitement pourraient être affinées (filtering des nuages, normalisation) et demandent consolidation et validation"
   },
   {
-    "objectID": "src/seminaire-dirag/index.html#ce-quil-reste-à-faire",
-    "href": "src/seminaire-dirag/index.html#ce-quil-reste-à-faire",
+    "objectID": "src/seminaire-dirag/index.html#améliorations-possibles-1",
+    "href": "src/seminaire-dirag/index.html#améliorations-possibles-1",
     "title": "Travaux exploratoires avec des données satellites : Bilan des résultats obtenus",
-    "section": "Ce qu’il reste à faire",
-    "text": "Ce qu’il reste à faire\n\nExpertiser d’autres jeux de données :\n\nPour les annotations\nPour les images, données stéréoscopiques, Pleiades neo..\n\nSe rapprocher du concept de logement\nMaîtriser le processus d’acquisition des images, sa temporalité\nExpertiser les résultats de l’algorithme entraîné et faire"
+    "section": "Améliorations possibles",
+    "text": "Améliorations possibles\n\nAnnotation ou récupération d’autres données annotées, 2 possibilités:\n\ntravailler à la main sur les annotations actuelles pour les améliorer\nrécupérer d’autres images annotées ou annotations pour nos images\n\nEntraînement des algorithmes:\n\nsecondaire par rapport à la qualité des annotations\nSuivre l’état de l’art à l’affût de nouveautés (hugging face)"
+  },
+  {
+    "objectID": "src/seminaire-dirag/index.html#améliorations-possibles-2",
+    "href": "src/seminaire-dirag/index.html#améliorations-possibles-2",
+    "title": "Travaux exploratoires avec des données satellites : Bilan des résultats obtenus",
+    "section": "Améliorations possibles",
+    "text": "Améliorations possibles\n\nServing : applications (API/application de visualisation) à développer au delà des prototypes actuels\nAnalyse des résultats: expertise des modèles encore insuffisante\nSentinel 2 : Poursuite des travaux de Judith Nabec sur images Sentinel 2 plus simple d’acquisition, et à résolution spectrale plus élevée (ou sur d’autres images)"
+  },
+  {
+    "objectID": "src/seminaire-dirag/index.html#la-suite",
+    "href": "src/seminaire-dirag/index.html#la-suite",
+    "title": "Travaux exploratoires avec des données satellites : Bilan des résultats obtenus",
+    "section": "La suite",
+    "text": "La suite\n\nFin de la phase d’expérimentation\nBeaucoup de cas d’usage identifiés et de clients finaux\nNécessité de monter un véritable projet pour chaque cas d’usage avec des moyens adaptés\nCe qui permettra de hiérarchiser les améliorations.."
   }
 ]

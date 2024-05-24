@@ -753,7 +753,7 @@
 <li><p>Pipeline <span class="orange"><strong>Python</strong></span> <img height="25" width="25" src="https://cdn.simpleicons.org/python/00000"> pour formatter les images brutes :</p>
 <ul>
 <li><span class="blue2"><strong>Sélection</strong></span> des images pour une zone d’intérêt</li>
-<li><span class="blue2"><strong>Suppresion</strong></span> des images ennuagées</li>
+<li><span class="blue2"><strong>Suppression</strong></span> des images ennuagées</li>
 <li><span class="blue2"><strong>Découpage</strong></span> des images <span class="math inline">\(125m \times 125m\)</span></li>
 </ul></li>
 <li><p>Pipeline de <span class="orange"><strong>labellisation</strong></span> des images satellites avec la BDTOPO</p></li>
@@ -818,34 +818,17 @@
 </ul></li>
 </ul>
 </section>
-<section id="en-résumé-1" class="slide level2" data-background-image="background.svg" data-background-size="contain">
-<h2>En résumé</h2>
-<p>Schéma reliant les 6 étapes, identifiant ce qui est automatisé et ce qui ne l’est pas</p>
-</section></section>
-<section>
-<section id="discussion" class="title-slide slide level1 center" data-background-image="background.svg" data-background-size="contain">
-<h1>Discussion</h1>
-
-</section>
-<section id="discussion-1" class="slide level2" data-background-image="background.svg" data-background-size="contain">
-<h2>Discussion</h2>
-<ul>
-<li>Opportunités pour l’enquête cartographique<br>
-</li>
-<li>Première utilisation des algorithmes effectuées par la DMTR pour prioriser l’envoi d’agents sur le terrain</li>
-<li>Opportunité pour le soutien des estimations de population à Mayotte</li>
-</ul>
-</section>
 <section id="maintenir-les-travaux" class="slide level2" data-background-image="background.svg" data-background-size="contain">
 <h2>Maintenir les travaux :</h2>
 <ul>
-<li>Le produit final, s’appuie sur un bon nombre de briques :
+<li>Le produit final s’appuie sur un bon nombre de briques :
 <ul>
 <li>Traitements des données (images, données Insee)</li>
 <li>Entraînement des algorithmes de Deep Learning</li>
 <li>Production des prédictions via API</li>
 <li>Mise en valeur des résultats (application WEB et mise en place d’un Geoserver)</li>
 </ul></li>
+<li><span class="orange"><strong>Coût de maintenance élevé</strong></span> ! Compétences rares à l’INSEE (<span class="blue2"><em>ou ailleurs ?</em></span>)</li>
 </ul>
 </section>
 <section id="maintenir-les-travaux-1" class="slide level2" data-background-image="background.svg" data-background-size="contain">
@@ -859,43 +842,76 @@
 </figcaption>
 </figure>
 </div>
+</section></section>
+<section>
+<section id="discussion" class="title-slide slide level1 center" data-background-image="background.svg" data-background-size="contain">
+<h1>Discussion</h1>
+
 </section>
-<section id="les-compétences-nécessaires" class="slide level2" data-background-image="background.svg" data-background-size="contain">
-<h2>Les Compétences nécessaires :</h2>
+<section id="ce-quon-a-obtenu" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>Ce qu’on a obtenu</h2>
 <ul>
-<li>compétences en analyse spatiale</li>
-<li>Développement d’application web</li>
-<li>Veille technique, rester à la pointe en Machine Learning</li>
-<li>veille sur les données, annotations etc..</li>
-</ul>
-</section>
-<section id="ce-quon-sait-faire" class="slide level2" data-background-image="background.svg" data-background-size="contain">
-<h2>Ce qu’on sait faire :</h2>
-<ul>
-<li>L’algorithme entraîné permet de mesurer l’évolution du bâti <span class="math inline">\(\longrightarrow\)</span> Peut soutenir l’enquête cartographique<br>
+<li>Résultats prometteurs pour le soutien de l’enquête cartographique<br>
 </li>
-<li>Estimations frustre de population réalisable, à partir des évolutions de bâti, <em>a minima</em> pour</li>
+<li>Première utilisation des algorithmes effectuée par la DMTR pour prioriser l’envoi d’agents sur le terrain</li>
+<li>Opportunité pour le soutien des estimations de population à Mayotte</li>
+<li>Parti pris de présenter une chaîne complète de production en guise de POC !</li>
+<li>Choix rapides <span class="math inline">\(\longrightarrow\)</span> plein d’améliorations possibles</li>
 </ul>
 </section>
-<section id="ce-quil-reste-à-faire" class="slide level2" data-background-image="background.svg" data-background-size="contain">
-<h2>Ce qu’il reste à faire</h2>
+<section id="améliorations-possibles" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>Améliorations possibles</h2>
 <ul>
-<li>Expertiser d’autres jeux de données :
+<li><span class="orange"><strong>Acquisition</strong></span>:
 <ul>
-<li>Pour les annotations</li>
-<li>Pour les images, données stéréoscopiques, Pleiades neo..</li>
+<li>Les données Pleiades dont nous disposons sont fournies par l’IGN et sont grossièrement datées à l’année</li>
+<li>Travail à fournir pour maîtriser l’acquisition de données PLEIADES (notamment le temps)</li>
+<li>Indispensable si on veut des estimations précisément datées</li>
 </ul></li>
-<li>Se rapprocher du concept de logement</li>
-<li>Maîtriser le processus d’acquisition des images, sa temporalité</li>
-<li>Expertiser les résultats de l’algorithme entraîné et faire</li>
+<li>Pré-traitement des données satellites: Les premières briques de prétraitement pourraient être affinées (filtering des nuages, normalisation) et demandent consolidation et validation</li>
 </ul>
+</section>
+<section id="améliorations-possibles-1" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>Améliorations possibles</h2>
+<ul>
+<li><span class="orange"><strong>Annotation ou récupération d’autres données annotées</strong></span>, 2 possibilités:
+<ul>
+<li>travailler à la main sur les annotations actuelles pour les améliorer</li>
+<li>récupérer d’autres images annotées ou annotations pour nos images</li>
+</ul></li>
+<li><span class="orange"><strong>Entraînement des algorithmes</strong></span>:
+<ul>
+<li>secondaire par rapport à la qualité des annotations</li>
+<li>Suivre l’état de l’art à l’affût de nouveautés (hugging face)</li>
+</ul></li>
+</ul>
+</section>
+<section id="améliorations-possibles-2" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>Améliorations possibles</h2>
+<ul>
+<li><span class="orange"><strong>Serving</strong></span> : applications (API/application de visualisation) à développer au delà des prototypes actuels</li>
+<li><span class="orange"><strong>Analyse des résultats</strong></span>: expertise des modèles encore insuffisante</li>
+<li><span class="orange"><strong>Sentinel 2</strong></span> : Poursuite des travaux de Judith Nabec sur images Sentinel 2 plus simple d’acquisition, et à résolution spectrale plus élevée (ou sur d’autres images)</li>
+</ul>
+</section>
+<section id="la-suite" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>La suite</h2>
+<ul>
+<li>Fin de la phase d’expérimentation</li>
+<li>Beaucoup de cas d’usage identifiés et de clients finaux</li>
+<li>Nécessité de monter un véritable projet pour chaque cas d’usage avec des moyens adaptés</li>
+<li>Ce qui permettra de hiérarchiser les améliorations..</li>
+</ul>
+</section></section>
+<section id="merci-pour-votre-attention" class="title-slide slide level1 center" data-background-image="background.svg" data-background-size="contain">
+<h1>Merci pour votre attention !</h1>
 
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 
 </div>
 </div>
-</section></section>
+</section>
     </div>
   </div>
 
