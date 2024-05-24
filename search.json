@@ -252,6 +252,20 @@
     "text": "Soustraction du bâti"
   },
   {
+    "objectID": "src/seminaire-dirag/index.html#nettoyage-de-la-soustraction",
+    "href": "src/seminaire-dirag/index.html#nettoyage-de-la-soustraction",
+    "title": "Travaux exploratoires avec des données satellites : Bilan des résultats obtenus",
+    "section": "Nettoyage de la soustraction",
+    "text": "Nettoyage de la soustraction\n\\[\n\\text{Indice de Compacite} = (4 * \\pi * \\text{Aire}) / (\\text{Perimetre} ^2)\n\\]\nSeuiller les polygones selon cet indice permet de supprimer les plus longilignes."
+  },
+  {
+    "objectID": "src/seminaire-dirag/index.html#résultat",
+    "href": "src/seminaire-dirag/index.html#résultat",
+    "title": "Travaux exploratoires avec des données satellites : Bilan des résultats obtenus",
+    "section": "Résultat",
+    "text": "Résultat\n\nOn obtient donc la différence de bâti d’une année à l’autre."
+  },
+  {
     "objectID": "src/seminaire-dirag/index.html#outils-utilisés",
     "href": "src/seminaire-dirag/index.html#outils-utilisés",
     "title": "Travaux exploratoires avec des données satellites : Bilan des résultats obtenus",
