@@ -60,7 +60,7 @@
     "href": "src/seminaire-dirag/index.html#segmentation-sémantique",
     "title": "Travaux exploratoires avec des données satellites : Bilan des résultats obtenus",
     "section": "Segmentation sémantique",
-    "text": "Segmentation sémantique"
+    "text": "Segmentation sémantique\n\nPleiades © CNES_2022, Distribution AIRBUS DS"
   },
   {
     "objectID": "src/seminaire-dirag/index.html#entrainement-dun-modèle-de-segmentation",
@@ -123,7 +123,7 @@
     "href": "src/seminaire-dirag/index.html#pléiades-vs-sentinel-2",
     "title": "Travaux exploratoires avec des données satellites : Bilan des résultats obtenus",
     "section": "Pléiades vs Sentinel-2",
-    "text": "Pléiades vs Sentinel-2\n\n\n\n\n\n\n\n\n\nPleiades\n\n\n\n\n\n\n\nSentinel2\n\n\n\n\n\n\nPleiades © CNES_2022, Distribution AIRBUS DS"
+    "text": "Pléiades vs Sentinel-2\n\n\n\n\n\n\n\n\n\nPleiades © CNES_2022, Distribution AIRBUS DS\n\n\n\n\n\n\n\nSentinel2"
   },
   {
     "objectID": "src/seminaire-dirag/index.html#sources-disponibles-de-localisation-de-bâtiments",
@@ -144,7 +144,7 @@
     "href": "src/seminaire-dirag/index.html#exemple-dannotations-ril",
     "title": "Travaux exploratoires avec des données satellites : Bilan des résultats obtenus",
     "section": "Exemple d’annotations RIL",
-    "text": "Exemple d’annotations RIL\n\nMasque RIL"
+    "text": "Exemple d’annotations RIL\n\nMasque RIL, Pleiades © CNES_2022, Distribution AIRBUS DS"
   },
   {
     "objectID": "src/seminaire-dirag/index.html#la-bdtopo",
@@ -158,42 +158,42 @@
     "href": "src/seminaire-dirag/index.html#exemple-dannotations-bdtopo",
     "title": "Travaux exploratoires avec des données satellites : Bilan des résultats obtenus",
     "section": "Exemple d’annotations BDTOPO",
-    "text": "Exemple d’annotations BDTOPO\n\nMasque BDTOPO"
+    "text": "Exemple d’annotations BDTOPO\n\nMasque BDTOPO, Pleiades © CNES_2022, Distribution AIRBUS DS"
   },
   {
     "objectID": "src/seminaire-dirag/index.html#résultats-de-mayotte",
     "href": "src/seminaire-dirag/index.html#résultats-de-mayotte",
     "title": "Travaux exploratoires avec des données satellites : Bilan des résultats obtenus",
     "section": "Résultats de Mayotte",
-    "text": "Résultats de Mayotte"
+    "text": "Résultats de Mayotte\n\nPleiades © CNES_2022, Distribution AIRBUS DS"
   },
   {
     "objectID": "src/seminaire-dirag/index.html#section",
     "href": "src/seminaire-dirag/index.html#section",
     "title": "Travaux exploratoires avec des données satellites : Bilan des résultats obtenus",
     "section": "",
-    "text": "Prédictions originales 2023 de Mayotte et localisation des quartiers de l’île (Insee 2012)"
+    "text": "Prédictions originales 2023 de Mayotte et localisation des quartiers de l’île (Insee 2012), Pleiades © CNES_2022, Distribution AIRBUS DS"
   },
   {
     "objectID": "src/seminaire-dirag/index.html#étalement-urbain",
     "href": "src/seminaire-dirag/index.html#étalement-urbain",
     "title": "Travaux exploratoires avec des données satellites : Bilan des résultats obtenus",
     "section": "Étalement urbain",
-    "text": "Étalement urbain"
+    "text": "Étalement urbain\n\nPleiades © CNES_2022, Distribution AIRBUS DS"
   },
   {
     "objectID": "src/seminaire-dirag/index.html#construction-de-logements",
     "href": "src/seminaire-dirag/index.html#construction-de-logements",
     "title": "Travaux exploratoires avec des données satellites : Bilan des résultats obtenus",
     "section": "Construction de logements",
-    "text": "Construction de logements\n\n\n\n\n\n\n\n\n\n\n\n\n\nPrédictions 2023 sur fond d’image 2020 et sur fond d’image 2023"
+    "text": "Construction de logements\n\n\n\n\n\n\n\n\n\n\n\n\n\nPrédictions 2023 sur fond d’image 2020 et sur fond d’image 2023, Pleiades © CNES_2022, Distribution AIRBUS DS"
   },
   {
     "objectID": "src/seminaire-dirag/index.html#prédictions-dun-centre-ville",
     "href": "src/seminaire-dirag/index.html#prédictions-dun-centre-ville",
     "title": "Travaux exploratoires avec des données satellites : Bilan des résultats obtenus",
     "section": "Prédictions d’un centre-ville",
-    "text": "Prédictions d’un centre-ville\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPrédictions originales 2023 d’une zone de Mayotte"
+    "text": "Prédictions d’un centre-ville\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPrédictions originales 2023 d’une zone de Mayotte, Pleiades © CNES_2022, Distribution AIRBUS DS"
   },
   {
     "objectID": "src/seminaire-dirag/index.html#imperfections-du-modèle",
