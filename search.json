@@ -284,7 +284,7 @@
     "href": "src/seminaire-dirag/index.html#etape-1-acquisition-des-images-satellitaires",
     "title": "Travaux exploratoires avec des données satellites : Bilan des résultats obtenus",
     "section": "Etape 1 : Acquisition des images satellitaires",
-    "text": "Etape 1 : Acquisition des images satellitaires\n\nRécupération artisanale des images Pléiades :\n\nDemandes réalisées par mail à l’IGN, échanges via FTP\nGroupe DMRG créé sur Dinamis, mais non utilisé\n\nImages de Guyane via ST973 (partenariat CNES ?)\nDatation des images peu précise et non standardisée\nStockage des images orthos 8bits sur le SSPCloud"
+    "text": "Etape 1 : Acquisition des images satellitaires\n\nRécupération artisanale des images Pléiades :\n\nDemandes réalisées par mail à l’IGN, échanges via FTP\nGroupe DMRG créé sur Dinamis, mais non utilisé\n\nImages de Guyane via ST973\nDatation des images peu précise et non standardisée\nStockage des images orthos 8bits sur le SSPCloud"
   },
   {
     "objectID": "src/seminaire-dirag/index.html#etape-2-nettoyage-et-annotation-des-images",
@@ -347,7 +347,7 @@
     "href": "src/seminaire-dirag/index.html#etape-2",
     "title": "Travaux exploratoires avec des données satellites : Bilan des résultats obtenus",
     "section": "Etape 2",
-    "text": "Etape 2\n\n\n\n\n\n\nLe nettoyage (filtering des nuages, normalisation) pourraient être consolidées et demandent validation\nAnnotation ou récupération d’autres données annotées, 2 possibilités:\n\nAméliorer les annotations actuelles manuellement\nRécupérer d’autres images annotées ou annotations pour nos images"
+    "text": "Etape 2\n\n\n\n\n\n\nLe nettoyage (filtering des nuages, normalisation) doit être consolidé et demande validation\nAnnotation ou récupération d’autres données annotées, 2 possibilités :\n\nAméliorer les annotations actuelles manuellement\nRécupérer d’autres images annotées ou annotations pour nos images"
   },
   {
     "objectID": "src/seminaire-dirag/index.html#etape-3",
