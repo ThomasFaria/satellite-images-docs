@@ -273,18 +273,18 @@
     "text": "Outils utilisés\n\nProjet techniquement complexe pour diverses raisons :\n\nDonnées non traditionnelles\nVolumétrie des données\nBesoins ressources computationnelles élevées\nReproductibilité nécéssaire\n\nNécessité d’utiliser des technologies spécifiques, pas forcément dans le toolkit standard du statisticien\nPlateforme SSPCloud centrale pour la réalisation d’un tel projet\nProjet construit en 6 étapes séquentielles"
   },
   {
-    "objectID": "src/seminaire-dirag/index.html#etape-1-récupération-des-images-satellitaires-brutes",
-    "href": "src/seminaire-dirag/index.html#etape-1-récupération-des-images-satellitaires-brutes",
+    "objectID": "src/seminaire-dirag/index.html#etape-1-acquisition-des-images-satellitaires",
+    "href": "src/seminaire-dirag/index.html#etape-1-acquisition-des-images-satellitaires",
     "title": "Travaux exploratoires avec des données satellites : Bilan des résultats obtenus",
-    "section": "Etape 1 : Récupération des images satellitaires brutes",
-    "text": "Etape 1 : Récupération des images satellitaires brutes\n\nRécupération artisanale des images Pléiades :\n\nDemandes réalisées par mail à l’IGN, échanges via FTP\nGroupe DMRG créé sur Dinamis, mais non utilisé\n\nImages de Guyane via ST973 (partenariat CNES ?)\nDatation des images peu précise et non standardisée\nStockage des images orthos 8bits sur le SSPCloud"
+    "section": "Etape 1 : Acquisition des images satellitaires",
+    "text": "Etape 1 : Acquisition des images satellitaires\n\nRécupération artisanale des images Pléiades :\n\nDemandes réalisées par mail à l’IGN, échanges via FTP\nGroupe DMRG créé sur Dinamis, mais non utilisé\n\nImages de Guyane via ST973 (partenariat CNES ?)\nDatation des images peu précise et non standardisée\nStockage des images orthos 8bits sur le SSPCloud"
   },
   {
-    "objectID": "src/seminaire-dirag/index.html#etape-2-nettoyage-et-annotation-des-images-recueillis",
-    "href": "src/seminaire-dirag/index.html#etape-2-nettoyage-et-annotation-des-images-recueillis",
+    "objectID": "src/seminaire-dirag/index.html#etape-2-nettoyage-et-annotation-des-images",
+    "href": "src/seminaire-dirag/index.html#etape-2-nettoyage-et-annotation-des-images",
     "title": "Travaux exploratoires avec des données satellites : Bilan des résultats obtenus",
-    "section": "Etape 2 : Nettoyage et annotation des images recueillis",
-    "text": "Etape 2 : Nettoyage et annotation des images recueillis\n\nPipeline Python  pour formatter les images brutes :\n\nSélection des images pour une zone d’intérêt\nSuppression des images ennuagées\nDécoupage des images \\(125m \\times 125m\\)\n\nPipeline de labellisation des images satellites avec la BDTOPO\nAutomatisation avec Argo Workflow"
+    "section": "Etape 2 : Nettoyage et annotation des images",
+    "text": "Etape 2 : Nettoyage et annotation des images\n\nPipeline Python  pour formatter les images brutes :\n\nSélection des images pour une zone d’intérêt\nSuppression des images ennuagées\nDécoupage des images \\(125m \\times 125m\\)\n\nPipeline de labellisation des images satellites avec la BDTOPO\nAutomatisation avec Argo Workflow"
   },
   {
     "objectID": "src/seminaire-dirag/index.html#etape-3-modélisation-et-entraînement",
@@ -336,38 +336,66 @@
     "text": "Maintenir les travaux :"
   },
   {
-    "objectID": "src/seminaire-dirag/index.html#ce-quon-a-obtenu",
-    "href": "src/seminaire-dirag/index.html#ce-quon-a-obtenu",
+    "objectID": "src/seminaire-dirag/index.html#résultats-de-lexpérimentation",
+    "href": "src/seminaire-dirag/index.html#résultats-de-lexpérimentation",
     "title": "Travaux exploratoires avec des données satellites : Bilan des résultats obtenus",
-    "section": "Ce qu’on a obtenu",
-    "text": "Ce qu’on a obtenu\n\nRésultats prometteurs pour le soutien de l’enquête cartographique\n\nPremière utilisation des algorithmes effectuée par la DMTR pour prioriser l’envoi d’agents sur le terrain\nOpportunité pour le soutien des estimations de population à Mayotte\nParti pris de présenter une chaîne complète de production en guise de POC !\nChoix rapides \\(\\longrightarrow\\) plein d’améliorations possibles"
+    "section": "Résultats de l’expérimentation",
+    "text": "Résultats de l’expérimentation\n\nRésultats prometteurs pour le soutien de l’enquête cartographique\nPremière utilisation des algorithmes effectuée par la DMTR pour prioriser l’envoi d’agents sur le terrain\nOpportunité pour le soutien des estimations de population à Mayotte\nParti pris de présenter une chaîne complète de production en guise de POC !\nChoix rapides \\(\\longrightarrow\\) nombreuses améliorations possibles"
   },
   {
-    "objectID": "src/seminaire-dirag/index.html#améliorations-possibles",
-    "href": "src/seminaire-dirag/index.html#améliorations-possibles",
+    "objectID": "src/seminaire-dirag/index.html#etape-1-acquisition-des-images-satellitaires-1",
+    "href": "src/seminaire-dirag/index.html#etape-1-acquisition-des-images-satellitaires-1",
     "title": "Travaux exploratoires avec des données satellites : Bilan des résultats obtenus",
-    "section": "Améliorations possibles",
-    "text": "Améliorations possibles\n\nAcquisition:\n\nLes données Pleiades dont nous disposons sont fournies par l’IGN et sont grossièrement datées à l’année\nTravail à fournir pour maîtriser l’acquisition de données PLEIADES (notamment le temps)\nIndispensable si on veut des estimations précisément datées\n\nPré-traitement des données satellites: Les premières briques de prétraitement pourraient être affinées (filtering des nuages, normalisation) et demandent consolidation et validation"
+    "section": "Etape 1 : Acquisition des images satellitaires",
+    "text": "Etape 1 : Acquisition des images satellitaires\n\nLes données Pleiades dont nous disposons sont fournies par l’IGN et ne sont datées qu’à l’année\nTravail à fournir pour maîtriser l’acquisition de données PLEIADES\nIndispensable si on veut des estimations précisément datées"
   },
   {
-    "objectID": "src/seminaire-dirag/index.html#améliorations-possibles-1",
-    "href": "src/seminaire-dirag/index.html#améliorations-possibles-1",
+    "objectID": "src/seminaire-dirag/index.html#etape-2-nettoyage-et-annotation-des-images-1",
+    "href": "src/seminaire-dirag/index.html#etape-2-nettoyage-et-annotation-des-images-1",
     "title": "Travaux exploratoires avec des données satellites : Bilan des résultats obtenus",
-    "section": "Améliorations possibles",
-    "text": "Améliorations possibles\n\nAnnotation ou récupération d’autres données annotées, 2 possibilités:\n\ntravailler à la main sur les annotations actuelles pour les améliorer\nrécupérer d’autres images annotées ou annotations pour nos images\n\nEntraînement des algorithmes:\n\nsecondaire par rapport à la qualité des annotations\nSuivre l’état de l’art à l’affût de nouveautés (hugging face)"
+    "section": "Etape 2 : Nettoyage et annotation des images",
+    "text": "Etape 2 : Nettoyage et annotation des images\n\nLes briques de pré-traitement (filtering des nuages, normalisation) pourraient être consolidées et demandent validation\nAnnotation ou récupération d’autres données annotées, 2 possibilités:\n\nAméliorer les annotations actuelles manuellement\nRécupérer d’autres images annotées ou annotations pour nos images"
   },
   {
-    "objectID": "src/seminaire-dirag/index.html#améliorations-possibles-2",
-    "href": "src/seminaire-dirag/index.html#améliorations-possibles-2",
+    "objectID": "src/seminaire-dirag/index.html#etape-3-modélisation-et-entraînement-1",
+    "href": "src/seminaire-dirag/index.html#etape-3-modélisation-et-entraînement-1",
     "title": "Travaux exploratoires avec des données satellites : Bilan des résultats obtenus",
-    "section": "Améliorations possibles",
-    "text": "Améliorations possibles\n\nServing : applications (API/application de visualisation) à développer au delà des prototypes actuels\nAnalyse des résultats: expertise des modèles encore insuffisante\nSentinel 2 : Poursuite des travaux de Judith Nabec sur images Sentinel 2 plus simple d’acquisition, et à résolution spectrale plus élevée (ou sur d’autres images)"
+    "section": "Etape 3 : Modélisation et entraînement",
+    "text": "Etape 3 : Modélisation et entraînement\n\nAméliorations secondaires par rapport à l’amélioration de la qualité des annotations\nSuivre l’état de l’art à l’affût de nouveautés (modèle pré-entraînés sur HuggingFace)"
+  },
+  {
+    "objectID": "src/seminaire-dirag/index.html#etape-4-inférence-du-modèle-1",
+    "href": "src/seminaire-dirag/index.html#etape-4-inférence-du-modèle-1",
+    "title": "Travaux exploratoires avec des données satellites : Bilan des résultats obtenus",
+    "section": "Etape 4 : Inférence du modèle",
+    "text": "Etape 4 : Inférence du modèle\n\nAPI à développer au delà du prototype actuel"
+  },
+  {
+    "objectID": "src/seminaire-dirag/index.html#etape-5-mise-à-disposition-des-résultats-1",
+    "href": "src/seminaire-dirag/index.html#etape-5-mise-à-disposition-des-résultats-1",
+    "title": "Travaux exploratoires avec des données satellites : Bilan des résultats obtenus",
+    "section": "Etape 5 : Mise à disposition des résultats",
+    "text": "Etape 5 : Mise à disposition des résultats\n\nApplication de visualisation à développer au delà du prototype actuel"
+  },
+  {
+    "objectID": "src/seminaire-dirag/index.html#etape-6-analyses-des-résultats-selon-les-cas-dusages-1",
+    "href": "src/seminaire-dirag/index.html#etape-6-analyses-des-résultats-selon-les-cas-dusages-1",
+    "title": "Travaux exploratoires avec des données satellites : Bilan des résultats obtenus",
+    "section": "Etape 6 : Analyses des résultats selon les cas d’usages",
+    "text": "Etape 6 : Analyses des résultats selon les cas d’usages\n\nAnalyse des résultats encore insuffisante et à pousser"
+  },
+  {
+    "objectID": "src/seminaire-dirag/index.html#en-plus",
+    "href": "src/seminaire-dirag/index.html#en-plus",
+    "title": "Travaux exploratoires avec des données satellites : Bilan des résultats obtenus",
+    "section": "En plus",
+    "text": "En plus\n\nSentinel 2 : Poursuite des travaux de Judith Nabec sur images Sentinel 2 plus simples d’acquisition, et à résolution spectrale plus élevée (ou sur d’autres images)"
   },
   {
     "objectID": "src/seminaire-dirag/index.html#la-suite",
     "href": "src/seminaire-dirag/index.html#la-suite",
     "title": "Travaux exploratoires avec des données satellites : Bilan des résultats obtenus",
     "section": "La suite",
-    "text": "La suite\n\nFin de la phase d’expérimentation\nBeaucoup de cas d’usage identifiés et de clients finaux\nNécessité de monter un véritable projet pour chaque cas d’usage avec des moyens adaptés\nCe qui permettra de hiérarchiser les améliorations.."
+    "text": "La suite\n\nFin de la phase d’expérimentation\nBeaucoup de cas d’usage identifiés et de clients finaux\nNécessité de monter un véritable projet pour chaque cas d’usage avec des moyens adaptés\nCe qui permettra de hiérarchiser les améliorations"
   }
 ]
