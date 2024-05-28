@@ -109,14 +109,14 @@
     "href": "src/seminaire-dirag/index.html#images-pléiades",
     "title": "Travaux exploratoires avec des données satellites : Bilan des résultats obtenus",
     "section": "Images Pléiades",
-    "text": "Images Pléiades\n\nFréquence d’acquisition :\n\nArchives gratuites\nPayant sur demande (1,80€/km²): 6 à 8 mois pour avoir un département\n\nRésolution spectrale : 3 bandes (RGB)\nRésolution spatiale : un pixel = 0.5x0.5 m\nTaille d’une image : 2000*2000 pixels = 1km²"
+    "text": "Images Pléiades\n\nFréquence d’acquisition :\n\nArchives gratuites\nPayant sur demande (1,80€/km²): 6 à 8 mois pour avoir un département\n\nRésolution spectrale : 3 bandes (RGB)\nRésolution spatiale : un pixel = \\(0.5m \\times 0.5m\\)\nTaille d’une image : \\(2000 \\times 2000\\) pixels = 1km²"
   },
   {
     "objectID": "src/seminaire-dirag/index.html#images-sentinel2",
     "href": "src/seminaire-dirag/index.html#images-sentinel2",
     "title": "Travaux exploratoires avec des données satellites : Bilan des résultats obtenus",
     "section": "Images Sentinel2",
-    "text": "Images Sentinel2\n\nFréquence d’acquisition : tous les 5 jours et gratuit\nRésolution spectrale : 13\nRésolution spatiale : un pixel = 10x10 m\nTaille d’une image : 250*250 pixels = 6.25 km²"
+    "text": "Images Sentinel2\n\nFréquence d’acquisition : tous les 5 jours et gratuit\nRésolution spectrale : 13\nRésolution spatiale : un pixel = \\(10m \\times 10m\\)\nTaille d’une image : \\(250 \\times 250\\) = 6.25 km²"
   },
   {
     "objectID": "src/seminaire-dirag/index.html#pléiades-vs-sentinel-2",
@@ -298,7 +298,7 @@
     "href": "src/seminaire-dirag/index.html#etape-3-modélisation-et-entraînement",
     "title": "Travaux exploratoires avec des données satellites : Bilan des résultats obtenus",
     "section": "Etape 3 : Modélisation et entraînement",
-    "text": "Etape 3 : Modélisation et entraînement\n\nEntraînement avec le package Pytorch\nSuivi et comparaison des modèles avec MLFlow\nUtilisation GPU SSP Cloud indispensable (10h d’entraînement)\nAutomatisation avec Argo Workflow"
+    "text": "Etape 3 : Modélisation et entraînement\n\nEntraînement avec le package Pytorch\nSuivi et comparaison des modèles avec MLFlow\nUtilisation GPU indispensable (10h d’entraînement sur le SSP Cloud)\nAutomatisation avec Argo Workflow"
   },
   {
     "objectID": "src/seminaire-dirag/index.html#etape-4-inférence-du-modèle",
