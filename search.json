@@ -273,6 +273,13 @@
     "text": "Outils utilisés\n\nProjet techniquement complexe pour diverses raisons :\n\nDonnées non traditionnelles\nVolumétrie des données\nBesoins ressources computationnelles élevées\nReproductibilité nécéssaire\n\nNécessité d’utiliser des technologies spécifiques, pas forcément dans le toolkit standard du statisticien\nPlateforme SSPCloud centrale pour la réalisation d’un tel projet\nProjet construit en 6 étapes séquentielles"
   },
   {
+    "objectID": "src/seminaire-dirag/index.html#chaîne-de-traitement",
+    "href": "src/seminaire-dirag/index.html#chaîne-de-traitement",
+    "title": "Travaux exploratoires avec des données satellites : Bilan des résultats obtenus",
+    "section": "Chaîne de traitement",
+    "text": "Chaîne de traitement"
+  },
+  {
     "objectID": "src/seminaire-dirag/index.html#etape-1-acquisition-des-images-satellitaires",
     "href": "src/seminaire-dirag/index.html#etape-1-acquisition-des-images-satellitaires",
     "title": "Travaux exploratoires avec des données satellites : Bilan des résultats obtenus",
@@ -291,7 +298,7 @@
     "href": "src/seminaire-dirag/index.html#etape-3-modélisation-et-entraînement",
     "title": "Travaux exploratoires avec des données satellites : Bilan des résultats obtenus",
     "section": "Etape 3 : Modélisation et entraînement",
-    "text": "Etape 3 : Modélisation et entraînement\n\nEntraînement avec le package Pytorch\nSuivi et comparaison des modèles avec MLFlow\nUtilisation GPU SSP Cloud indispensable (10h d’entraînement)\nAutomatisation Année x Département avec Argo Workflow"
+    "text": "Etape 3 : Modélisation et entraînement\n\nEntraînement avec le package Pytorch\nSuivi et comparaison des modèles avec MLFlow\nUtilisation GPU SSP Cloud indispensable (10h d’entraînement)\nAutomatisation avec Argo Workflow"
   },
   {
     "objectID": "src/seminaire-dirag/index.html#etape-4-inférence-du-modèle",
@@ -312,77 +319,63 @@
     "href": "src/seminaire-dirag/index.html#etape-6-analyses-des-résultats-selon-les-cas-dusages",
     "title": "Travaux exploratoires avec des données satellites : Bilan des résultats obtenus",
     "section": "Etape 6 : Analyses des résultats selon les cas d’usages",
-    "text": "Etape 6 : Analyses des résultats selon les cas d’usages\n\nTravail statistique sur les prédictions :\n\nDétection des zones à forte créations/disparition\nProduction de statistiques par îlot\nEvaluation des résultats"
+    "text": "Etape 6 : Analyses des résultats selon les cas d’usages\n\nTravail statistique sur les prédictions :\n\nDétection des zones à forte créations/disparitions\nProduction de statistiques par îlot\nEvaluation des résultats\n\nDépendant des cas d’usages, quelles priorisations ?"
   },
   {
     "objectID": "src/seminaire-dirag/index.html#en-résumé",
     "href": "src/seminaire-dirag/index.html#en-résumé",
     "title": "Travaux exploratoires avec des données satellites : Bilan des résultats obtenus",
     "section": "En résumé",
-    "text": "En résumé\n\n🛠️ Multitude d’outils à utiliser :\n\nKubernetes, Docker, stockage MinIO, API, ArgoCD, Argo Workflow, MLFlow, React…\n\n… mais dont le coût d’apprentissage est rapidement rentabilisé :\n\nTechnologies “state of the art”\nDe plus en plus utilisées à l’Insee (LS3)"
-  },
-  {
-    "objectID": "src/seminaire-dirag/index.html#maintenir-les-travaux",
-    "href": "src/seminaire-dirag/index.html#maintenir-les-travaux",
-    "title": "Travaux exploratoires avec des données satellites : Bilan des résultats obtenus",
-    "section": "Maintenir les travaux :",
-    "text": "Maintenir les travaux :\n\nLe produit final s’appuie sur un bon nombre de briques :\n\nTraitements des données (images, données Insee)\nEntraînement des algorithmes de Deep Learning\nProduction des prédictions via API\nMise en valeur des résultats (application WEB et mise en place d’un Geoserver)\n\nCoût de maintenance élevé ! Compétences rares à l’INSEE (ou ailleurs ?)"
-  },
-  {
-    "objectID": "src/seminaire-dirag/index.html#maintenir-les-travaux-1",
-    "href": "src/seminaire-dirag/index.html#maintenir-les-travaux-1",
-    "title": "Travaux exploratoires avec des données satellites : Bilan des résultats obtenus",
-    "section": "Maintenir les travaux :",
-    "text": "Maintenir les travaux :"
+    "text": "En résumé\n\n🛠️ Multitude d’outils à utiliser :\n\nKubernetes, Docker, stockage MinIO, API, ArgoCD, Argo Workflow, MLFlow, React…\n\n… mais dont le coût d’apprentissage est rapidement rentabilisé :\n\nTechnologies “state of the art”\nDe plus en plus utilisées à l’Insee (LS3)\n\n⚠️ Coût de maintenance élevé ! Compétences rares à l’INSEE (ou ailleurs ?)"
   },
   {
     "objectID": "src/seminaire-dirag/index.html#résultats-de-lexpérimentation",
     "href": "src/seminaire-dirag/index.html#résultats-de-lexpérimentation",
     "title": "Travaux exploratoires avec des données satellites : Bilan des résultats obtenus",
     "section": "Résultats de l’expérimentation",
-    "text": "Résultats de l’expérimentation\n\nRésultats prometteurs pour le soutien de l’enquête cartographique\nPremière utilisation des algorithmes effectuée par la DMTR pour prioriser l’envoi d’agents sur le terrain\nOpportunité pour le soutien des estimations de population à Mayotte\nParti pris de présenter une chaîne complète de production en guise de POC !\nChoix rapides \\(\\longrightarrow\\) nombreuses améliorations possibles"
+    "text": "Résultats de l’expérimentation\n\nRésultats prometteurs pour le soutien de l’enquête cartographique\nPremière utilisation des algorithmes effectuée par la DMTR pour prioriser l’envoi d’agents sur le terrain\nOpportunité pour le soutien des estimations de population à Mayotte\nParti pris de présenter une chaîne complète de production en guise de POC !\nChoix rapides ➡️ nombreuses améliorations possibles"
   },
   {
-    "objectID": "src/seminaire-dirag/index.html#etape-1-acquisition-des-images-satellitaires-1",
-    "href": "src/seminaire-dirag/index.html#etape-1-acquisition-des-images-satellitaires-1",
+    "objectID": "src/seminaire-dirag/index.html#etape-1",
+    "href": "src/seminaire-dirag/index.html#etape-1",
     "title": "Travaux exploratoires avec des données satellites : Bilan des résultats obtenus",
-    "section": "Etape 1 : Acquisition des images satellitaires",
-    "text": "Etape 1 : Acquisition des images satellitaires\n\nLes données Pleiades dont nous disposons sont fournies par l’IGN et ne sont datées qu’à l’année\nTravail à fournir pour maîtriser l’acquisition de données PLEIADES\nIndispensable si on veut des estimations précisément datées"
+    "section": "Etape 1",
+    "text": "Etape 1\n\n\n\n\n\n\nLes données Pleiades dont nous disposons sont fournies par l’IGN et ne sont datées qu’à l’année\nTravail à fournir pour maîtriser l’acquisition de données PLEIADES\nIndispensable si on veut des estimations précisément datées"
   },
   {
-    "objectID": "src/seminaire-dirag/index.html#etape-2-nettoyage-et-annotation-des-images-1",
-    "href": "src/seminaire-dirag/index.html#etape-2-nettoyage-et-annotation-des-images-1",
+    "objectID": "src/seminaire-dirag/index.html#etape-2",
+    "href": "src/seminaire-dirag/index.html#etape-2",
     "title": "Travaux exploratoires avec des données satellites : Bilan des résultats obtenus",
-    "section": "Etape 2 : Nettoyage et annotation des images",
-    "text": "Etape 2 : Nettoyage et annotation des images\n\nLes briques de pré-traitement (filtering des nuages, normalisation) pourraient être consolidées et demandent validation\nAnnotation ou récupération d’autres données annotées, 2 possibilités:\n\nAméliorer les annotations actuelles manuellement\nRécupérer d’autres images annotées ou annotations pour nos images"
+    "section": "Etape 2",
+    "text": "Etape 2\n\n\n\n\n\n\nLe nettoyage (filtering des nuages, normalisation) pourraient être consolidées et demandent validation\nAnnotation ou récupération d’autres données annotées, 2 possibilités:\n\nAméliorer les annotations actuelles manuellement\nRécupérer d’autres images annotées ou annotations pour nos images"
   },
   {
-    "objectID": "src/seminaire-dirag/index.html#etape-3-modélisation-et-entraînement-1",
-    "href": "src/seminaire-dirag/index.html#etape-3-modélisation-et-entraînement-1",
+    "objectID": "src/seminaire-dirag/index.html#etape-3",
+    "href": "src/seminaire-dirag/index.html#etape-3",
     "title": "Travaux exploratoires avec des données satellites : Bilan des résultats obtenus",
-    "section": "Etape 3 : Modélisation et entraînement",
-    "text": "Etape 3 : Modélisation et entraînement\n\nAméliorations secondaires par rapport à l’amélioration de la qualité des annotations\nSuivre l’état de l’art à l’affût de nouveautés (modèle pré-entraînés sur HuggingFace)"
+    "section": "Etape 3",
+    "text": "Etape 3\n\n\n\n\n\n\nAméliorations secondaires par rapport à l’amélioration de la qualité des annotations\nSuivre l’état de l’art à l’affût de nouveautés (modèle pré-entraînés sur HuggingFace)"
   },
   {
-    "objectID": "src/seminaire-dirag/index.html#etape-4-inférence-du-modèle-1",
-    "href": "src/seminaire-dirag/index.html#etape-4-inférence-du-modèle-1",
+    "objectID": "src/seminaire-dirag/index.html#etape-4",
+    "href": "src/seminaire-dirag/index.html#etape-4",
     "title": "Travaux exploratoires avec des données satellites : Bilan des résultats obtenus",
-    "section": "Etape 4 : Inférence du modèle",
-    "text": "Etape 4 : Inférence du modèle\n\nAPI à développer au delà du prototype actuel en fonction des besoins des clients"
+    "section": "Etape 4",
+    "text": "Etape 4\n\n\n\n\n\n\nAPI à développer au delà du prototype actuel en fonction des besoins des clients"
   },
   {
-    "objectID": "src/seminaire-dirag/index.html#etape-5-mise-à-disposition-des-résultats-1",
-    "href": "src/seminaire-dirag/index.html#etape-5-mise-à-disposition-des-résultats-1",
+    "objectID": "src/seminaire-dirag/index.html#etape-5",
+    "href": "src/seminaire-dirag/index.html#etape-5",
     "title": "Travaux exploratoires avec des données satellites : Bilan des résultats obtenus",
-    "section": "Etape 5 : Mise à disposition des résultats",
-    "text": "Etape 5 : Mise à disposition des résultats\n\nApplication de visualisation à développer au delà du prototype actuel en fonction des besoins des clients"
+    "section": "Etape 5",
+    "text": "Etape 5\n\n\n\n\n\n\nApplication de visualisation à développer au delà du prototype actuel en fonction des besoins des clients"
   },
   {
-    "objectID": "src/seminaire-dirag/index.html#etape-6-analyses-des-résultats-selon-les-cas-dusages-1",
-    "href": "src/seminaire-dirag/index.html#etape-6-analyses-des-résultats-selon-les-cas-dusages-1",
+    "objectID": "src/seminaire-dirag/index.html#etape-6",
+    "href": "src/seminaire-dirag/index.html#etape-6",
     "title": "Travaux exploratoires avec des données satellites : Bilan des résultats obtenus",
-    "section": "Etape 6 : Analyses des résultats selon les cas d’usages",
-    "text": "Etape 6 : Analyses des résultats selon les cas d’usages\n\nAnalyse des résultats encore insuffisante et à pousser"
+    "section": "Etape 6 :",
+    "text": "Etape 6 :\n\n\n\n\n\n\nAnalyse des résultats encore insuffisante et à pousser"
   },
   {
     "objectID": "src/seminaire-dirag/index.html#en-plus",

@@ -340,20 +340,17 @@
 </div>
 
   <p class="date">28 mai 2024</p>
-</section><section id="TOC">
-<nav role="doc-toc"> 
-<h2 id="toc-title">Plan de la présentation</h2>
-<ul>
-<li><a href="#/introduction" id="/toc-introduction">1️⃣ Introduction</a></li>
-<li><a href="#/méthodologie" id="/toc-méthodologie">2️⃣ Méthodologie</a></li>
-<li><a href="#/les-données" id="/toc-les-données">3️⃣ Les données</a></li>
-<li><a href="#/résultats-obtenus" id="/toc-résultats-obtenus">4️⃣ Résultats obtenus</a></li>
-<li><a href="#/structure-du-projet" id="/toc-structure-du-projet">5️⃣ Structure du projet</a></li>
-<li><a href="#/discussion" id="/toc-discussion">6️⃣ Discussion</a></li>
-<li><a href="#/merci-pour-votre-attention" id="/toc-merci-pour-votre-attention">Merci pour votre attention !</a></li>
-</ul>
-</nav>
 </section>
+<section id="plan-de-la-présentation" class="title-slide slide level1 center" data-background-image="background.svg" data-background-size="contain">
+<h1>Plan de la présentation</h1>
+<p>1️⃣ Introduction</p>
+<p>2️⃣ Méthodologie</p>
+<p>3️⃣ Les données</p>
+<p>4️⃣ Résultats obtenus</p>
+<p>5️⃣ Structure du projet</p>
+<p>6️⃣ Discussion</p>
+</section>
+
 <section>
 <section id="introduction" class="title-slide slide level1 center" data-background-image="background.svg" data-background-size="contain">
 <h1>1️⃣ Introduction</h1>
@@ -745,7 +742,18 @@
 <li>Plateforme <a href="https://datalab.sspcloud.fr/">SSPCloud</a> centrale pour la réalisation d’un tel projet</li>
 <li>Projet construit en <span class="blue2"><strong>6 étapes séquentielles</strong></span></li>
 </ul>
-<!-- - Utilisation de python obligatoire? -->
+</section>
+<section id="chaîne-de-traitement" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>Chaîne de traitement</h2>
+<div id="fig-chain2" class="quarto-float quarto-figure quarto-figure-center" width="100%" height="100%">
+<figure class="quarto-float quarto-float-fig">
+<div aria-describedby="fig-chain2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="../img/pipeline_donnees_sat.png" id="fig-chain2" style="width:100.0%;height:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-chain2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+</figcaption>
+</figure>
+</div>
 </section>
 <section id="etape-1-acquisition-des-images-satellitaires" class="slide level2" data-background-image="background.svg" data-background-size="contain">
 <h2>Etape 1 : Acquisition des images satellitaires</h2>
@@ -779,7 +787,7 @@
 <li><p>Entraînement avec le package <span class="orange"><strong>Pytorch</strong></span></p></li>
 <li><p>Suivi et comparaison des modèles avec <a href="https://projet-slums-detection-128833.user.lab.sspcloud.fr/#/experiments/10?searchFilter=&amp;orderByKey=attributes.start_time&amp;orderByAsc=false&amp;startTime=ALL&amp;lifecycleFilter=Active&amp;modelVersionFilter=All%20Runs&amp;selectedColumns=attributes.%60Source%60,attributes.%60Models%60,params.%60module_name%60&amp;isComparingRuns=false&amp;compareRunCharts=dW5kZWZpbmVk" data-preview-link="true"><span class="orange"><strong>MLFlow</strong></span></a></p></li>
 <li><p>Utilisation <span class="orange"><strong>GPU</strong></span> SSP Cloud indispensable (10h d’entraînement)</p></li>
-<li><p>Automatisation Année x Département avec <span class="orange"><strong>Argo Workflow</strong></span></p></li>
+<li><p>Automatisation avec <span class="orange"><strong>Argo Workflow</strong></span></p></li>
 </ul>
 </section>
 <section id="etape-4-inférence-du-modèle" class="slide level2" data-background-image="background.svg" data-background-size="contain">
@@ -809,12 +817,13 @@
 <section id="etape-6-analyses-des-résultats-selon-les-cas-dusages" class="slide level2" data-background-image="background.svg" data-background-size="contain">
 <h2>Etape 6 : Analyses des résultats selon les cas d’usages</h2>
 <ul>
-<li>Travail statistique sur les prédictions :
+<li><span class="orange"><strong>Travail statistique</strong></span> sur les prédictions :
 <ul>
-<li>Détection des zones à forte créations/disparition</li>
+<li>Détection des zones à forte créations/disparitions</li>
 <li>Production de statistiques par îlot</li>
 <li>Evaluation des résultats</li>
 </ul></li>
+<li>Dépendant des cas d’usages, quelles <span class="orange"><strong>priorisations</strong></span> ?</li>
 </ul>
 </section>
 <section id="en-résumé" class="slide level2" data-background-image="background.svg" data-background-size="contain">
@@ -829,32 +838,8 @@
 <li>Technologies <span class="orange"><strong>“state of the art”</strong></span></li>
 <li>De plus en plus utilisées à l’Insee (LS3)</li>
 </ul></li>
+<li>⚠️ <span class="orange"><strong>Coût de maintenance élevé</strong></span> ! Compétences rares à l’INSEE (<span class="blue2"><strong>ou ailleurs ?</strong></span>)</li>
 </ul>
-</section>
-<section id="maintenir-les-travaux" class="slide level2" data-background-image="background.svg" data-background-size="contain">
-<h2>Maintenir les travaux :</h2>
-<ul>
-<li>Le produit final s’appuie sur un bon nombre de briques :
-<ul>
-<li>Traitements des données (images, données Insee)</li>
-<li>Entraînement des algorithmes de Deep Learning</li>
-<li>Production des prédictions via API</li>
-<li>Mise en valeur des résultats (application WEB et mise en place d’un Geoserver)</li>
-</ul></li>
-<li><span class="orange"><strong>Coût de maintenance élevé</strong></span> ! Compétences rares à l’INSEE (<span class="blue2"><em>ou ailleurs ?</em></span>)</li>
-</ul>
-</section>
-<section id="maintenir-les-travaux-1" class="slide level2" data-background-image="background.svg" data-background-size="contain">
-<h2>Maintenir les travaux :</h2>
-<div id="fig-chain" class="quarto-float quarto-figure quarto-figure-center" height="100%" width="100%">
-<figure class="quarto-float quarto-float-fig">
-<div aria-describedby="fig-chain-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img data-src="../img/treatment_chain.png" id="fig-chain" style="width:100.0%;height:100.0%">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-chain-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-</figcaption>
-</figure>
-</div>
 </section></section>
 <section>
 <section id="discussion" class="title-slide slide level1 center" data-background-image="background.svg" data-background-size="contain">
@@ -868,21 +853,31 @@
 <li><span class="orange"><strong>Première utilisation</strong></span> des algorithmes effectuée par la DMTR pour prioriser l’envoi d’agents sur le terrain</li>
 <li>Opportunité pour le <span class="orange"><strong>soutien des estimations de population à Mayotte</strong></span></li>
 <li>Parti pris de présenter une <span class="orange"><strong>chaîne complète</strong></span> de production en guise de POC !</li>
-<li>Choix rapides <span class="math inline">\(\longrightarrow\)</span> <span class="orange"><strong>nombreuses améliorations possibles</strong></span></li>
+<li>Choix rapides ➡️ <span class="orange"><strong>nombreuses améliorations possibles</strong></span></li>
 </ul>
 </section>
-<section id="etape-1-acquisition-des-images-satellitaires-1" class="slide level2" data-background-image="background.svg" data-background-size="contain">
-<h2>Etape 1 : Acquisition des images satellitaires</h2>
+<section id="etape-1" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>Etape 1</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="../img/etape1.png" class="quarto-figure quarto-figure-center" style="width:50.0%;height:50.0%"></p>
+</figure>
+</div>
 <ul>
 <li>Les données Pleiades dont nous disposons sont fournies par l’IGN et ne sont <span class="orange"><strong>datées qu’à l’année</strong></span></li>
 <li>Travail à fournir pour <span class="orange"><strong>maîtriser l’acquisition</strong></span> de données PLEIADES</li>
 <li>Indispensable si on veut des estimations <span class="orange"><strong>précisément datées</strong></span></li>
 </ul>
 </section>
-<section id="etape-2-nettoyage-et-annotation-des-images-1" class="slide level2" data-background-image="background.svg" data-background-size="contain">
-<h2>Etape 2 : Nettoyage et annotation des images</h2>
+<section id="etape-2" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>Etape 2</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="../img/etape2.png" class="quarto-figure quarto-figure-center" style="width:50.0%;height:50.0%"></p>
+</figure>
+</div>
 <ul>
-<li><span class="orange"><strong>Les briques de pré-traitement</strong></span> (filtering des nuages, normalisation) pourraient être consolidées et demandent validation</li>
+<li><span class="orange"><strong>Le nettoyage</strong></span> (filtering des nuages, normalisation) pourraient être consolidées et demandent validation</li>
 <li><span class="orange"><strong>Annotation ou récupération d’autres données annotées</strong></span>, 2 possibilités:
 <ul>
 <li>Améliorer les annotations actuelles <span class="blue2"><strong>manuellement</strong></span></li>
@@ -890,27 +885,47 @@
 </ul></li>
 </ul>
 </section>
-<section id="etape-3-modélisation-et-entraînement-1" class="slide level2" data-background-image="background.svg" data-background-size="contain">
-<h2>Etape 3 : Modélisation et entraînement</h2>
+<section id="etape-3" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>Etape 3</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="../img/etape3.png" class="quarto-figure quarto-figure-center" style="width:50.0%;height:50.0%"></p>
+</figure>
+</div>
 <ul>
 <li>Améliorations <span class="orange"><strong>secondaires</strong></span> par rapport à l’amélioration de la qualité des annotations</li>
 <li><span class="orange"><strong>Suivre l’état de l’art</strong></span> à l’affût de nouveautés (modèle pré-entraînés sur HuggingFace)</li>
 </ul>
 </section>
-<section id="etape-4-inférence-du-modèle-1" class="slide level2" data-background-image="background.svg" data-background-size="contain">
-<h2>Etape 4 : Inférence du modèle</h2>
+<section id="etape-4" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>Etape 4</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="../img/etape4.png" class="quarto-figure quarto-figure-center" style="width:50.0%;height:50.0%"></p>
+</figure>
+</div>
 <ul>
 <li><span class="orange"><strong>API</strong></span> à développer au delà du prototype actuel en fonction des besoins des clients</li>
 </ul>
 </section>
-<section id="etape-5-mise-à-disposition-des-résultats-1" class="slide level2" data-background-image="background.svg" data-background-size="contain">
-<h2>Etape 5 : Mise à disposition des résultats</h2>
+<section id="etape-5" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>Etape 5</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="../img/etape5.png" class="quarto-figure quarto-figure-center" style="width:50.0%;height:50.0%"></p>
+</figure>
+</div>
 <ul>
 <li><span class="orange"><strong>Application de visualisation</strong></span> à développer au delà du prototype actuel en fonction des besoins des clients</li>
 </ul>
 </section>
-<section id="etape-6-analyses-des-résultats-selon-les-cas-dusages-1" class="slide level2" data-background-image="background.svg" data-background-size="contain">
-<h2>Etape 6 : Analyses des résultats selon les cas d’usages</h2>
+<section id="etape-6" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>Etape 6 :</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="../img/etape6.png" class="quarto-figure quarto-figure-center" style="width:50.0%;height:50.0%"></p>
+</figure>
+</div>
 <ul>
 <li><span class="orange"><strong>Analyse des résultats</strong></span> encore insuffisante et à pousser</li>
 </ul>
