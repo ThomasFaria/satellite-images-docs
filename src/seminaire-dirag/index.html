@@ -364,7 +364,7 @@
 <ul>
 <li>Dans le cadre du stage de Quentin Chabennet en 2022, participation au <a href="https://challengedata.ens.fr/">Challenge Data</a> <a href="https://challengedata.ens.fr/challenges/48">“Land cover predictive modeling from satellite images”</a></li>
 <li>SSM Agriculture: travail avec le Centre d’études spatiales de la biosphère (Cesbio). Comparaison de la carte d’<span class="orange"><strong>occupation du sol</strong></span> issue de l’enquête Teruti avec une carte construite avec des données de télédétection</li>
-<li>En Guyane, <span class="orange"><strong>fonds de carte issus de données Pleiades</strong></span> utilisés pour la collecte</li>
+<li>En Guyane, <span class="orange"><strong>fonds de carte issus de données Pléiades</strong></span> utilisés pour la collecte</li>
 <li>Discussion sur la possibilité d’utiliser de l’imagerie satellite pour faciliter l’<span class="orange"><strong>organisation de l’enquête cartographique</strong></span> en Guyane et à Mayotte</li>
 </ul>
 </section>
@@ -379,7 +379,7 @@
 <section id="une-source-de-données-à-fort-potentiel-1" class="slide level2" data-background-image="background.svg" data-background-size="contain">
 <h2>Une source de données à fort potentiel</h2>
 <ul>
-<li><span class="orange"><strong>Pleiades</strong></span> : données très haute résolution. Archives disponibles gratuitement pour l’Insee, et possibilité de faire des commandes (<strong>tasking</strong>), gratuites sous un certain quota</li>
+<li><span class="orange"><strong>Pléiades</strong></span> : données très haute résolution. Archives disponibles gratuitement pour l’Insee, et possibilité de faire des commandes (<strong>tasking</strong>), gratuites sous un certain quota</li>
 </ul>
 </section>
 <section id="utilisation-pour-la-statistique-publique" class="slide level2" data-background-image="background.svg" data-background-size="contain">
@@ -409,7 +409,7 @@
 <li>Appui pour l’<span class="orange"><strong>organisation des enquêtes cartographiques</strong></span>&nbsp;:
 <ul>
 <li>On sélectionne les <span class="blue2"><strong>îlots concernés</strong></span></li>
-<li>On récupère des données satellites couvrant ces îlots <span class="blue2"><strong>à la date de la précédente enquête</strong></span> cartographique et des <span class="blue2"><strong>données fraiches</strong></span></li>
+<li>On récupère des données satellites couvrant ces îlots <span class="blue2"><strong>à la date de la précédente enquête</strong></span> cartographique et des <span class="blue2"><strong>données fraîches</strong></span></li>
 <li>A l’aide de la méthode développée, on repère les ilots avec <span class="blue2"><strong>beaucoup de nouveaux bâtiments</strong></span>, etc.</li>
 </ul></li>
 </ul>
@@ -422,7 +422,7 @@
 <section id="segmentation-sémantique" class="slide level2" data-background-image="background.svg" data-background-size="contain">
 <h2>Segmentation sémantique</h2>
 
-<img data-src="../img/segmentation_exemple.png" style="width:80.0%" class="r-stretch"></section>
+<img data-src="../img/segmentation_exemple.png" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"></section>
 <section id="entrainement-dun-modèle-de-segmentation" class="slide level2" data-background-image="background.svg" data-background-size="contain">
 <h2>Entrainement d’un modèle de segmentation</h2>
 <ul>
@@ -451,8 +451,8 @@
 <section id="une-image-satellite" class="slide level2" data-background-image="background.svg" data-background-size="contain">
 <h2>Une image satellite</h2>
 <ul>
-<li>Une image satellite peut avoir d’autres <span class="orange"><strong>couches</strong></span> (ou <span class="orange"><strong>bandes</strong></span>) que les RGB : infrarouge par exemple.</li>
-<li>Les images satellites contiennent des informations géographiques → <span class="blue2"><strong>chaque pixel a des coordonnées</strong></span> dans l’espace.</li>
+<li>Une image satellite peut avoir d’autres <span class="orange"><strong>couches</strong></span> (ou <span class="orange"><strong>bandes</strong></span>) que les RGB : infrarouge par exemple</li>
+<li>Les images satellites contiennent des informations géographiques → <span class="blue2"><strong>chaque pixel a des coordonnées</strong></span> dans l’espace</li>
 </ul>
 </section>
 <section id="caractéristiques-dune-image-satellite" class="slide level2" data-background-image="background.svg" data-background-size="contain">
@@ -538,8 +538,8 @@
 <h2>Le RIL</h2>
 <ul>
 <li>Annotation d’un bâtiment = <span class="orange"><strong>un point</strong></span> qui donne l’emplacement du bâtiment (porte d’entrée ?)</li>
-<li>Le répertoire des immeubles localisés est une base de sondage actualisée dans les DOM par l’enquête cartographique</li>
-<li>Annotations en quantité limitée : l’enquête cartographique ne met à jour qu’un cinquième des logements du RIL dans les DOM</li>
+<li>Le <span class="orange"><strong>répertoire des immeubles localisés</strong></span> est une base de sondage actualisée dans les DOM par l’<span class="blue2"><strong>enquête cartographique</strong></span></li>
+<li>Annotations en <span class="blue2"><strong>quantité limitée</strong></span> : l’enquête cartographique ne met à jour qu’un cinquième des logements du RIL dans les DOM</li>
 <li>Concept de logement</li>
 </ul>
 </section>
@@ -551,11 +551,11 @@
 <h2>La BDTOPO</h2>
 <ul>
 <li>Annotation d’un bâtiment = <span class="blue2"><strong>un polygone</strong></span></li>
-<li>Elle est construite à partir de plusieurs sources, notamment à partir d’ortho-photos de l’IGN (prises de vue aériennes)</li>
+<li>Elle est construite à partir de plusieurs sources, notamment à partir d’ortho-photos de l’<span class="orange"><strong>IGN</strong></span> (prises de vue aériennes)</li>
 <li>Les éléments de la BDTOPO produite une année donnée ne sont pas datés précisément</li>
-<li>La BDTOPO n’est pas synchronisée avec les images PLEIADES que l’INSEE acquiert</li>
-<li>On retient tout de même la BDTOPO pour annoter les images PLEIADES</li>
+<li>La BDTOPO n’est pas synchronisée avec les images Pléiades que l’INSEE acquiert</li>
 </ul>
+<p><span class="blue2"><strong>On la retient tout de même</strong></span> pour annoter les images Pléiades.</p>
 </section>
 <section id="exemple-dannotations-bdtopo" class="slide level2" data-background-image="background.svg" data-background-size="contain">
 <h2>Exemple d’annotations BDTOPO</h2>
@@ -667,7 +667,7 @@
 </ul></li>
 </ul>
 
-<img data-src="../img/Buffer.jpg" style="width:100.0%" class="r-stretch"><ul>
+<img data-src="../img/Buffer.jpg" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"><ul>
 <li><span class="orange"><strong>Fusion</strong></span> des polygones qui s’interceptent pour effacer les frontières</li>
 </ul>
 </section>
@@ -820,7 +820,7 @@
 <section id="en-résumé" class="slide level2" data-background-image="background.svg" data-background-size="contain">
 <h2>En résumé</h2>
 <ul>
-<li>🛠️ <span class="orange"><strong>Multitudes</strong></span> d’outils à utiliser :
+<li>🛠️ <span class="orange"><strong>Multitude</strong></span> d’outils à utiliser :
 <ul>
 <li>Kubernetes, Docker, stockage MinIO, API, ArgoCD, Argo Workflow, MLFlow, React…</li>
 </ul></li>

@@ -18,7 +18,7 @@
     "href": "src/seminaire-dirag/index.html#origine-du-projet",
     "title": "Travaux exploratoires avec des données satellites : Bilan des résultats obtenus",
     "section": "Origine du projet",
-    "text": "Origine du projet\n\nDans le cadre du stage de Quentin Chabennet en 2022, participation au Challenge Data “Land cover predictive modeling from satellite images”\nSSM Agriculture: travail avec le Centre d’études spatiales de la biosphère (Cesbio). Comparaison de la carte d’occupation du sol issue de l’enquête Teruti avec une carte construite avec des données de télédétection\nEn Guyane, fonds de carte issus de données Pleiades utilisés pour la collecte\nDiscussion sur la possibilité d’utiliser de l’imagerie satellite pour faciliter l’organisation de l’enquête cartographique en Guyane et à Mayotte"
+    "text": "Origine du projet\n\nDans le cadre du stage de Quentin Chabennet en 2022, participation au Challenge Data “Land cover predictive modeling from satellite images”\nSSM Agriculture: travail avec le Centre d’études spatiales de la biosphère (Cesbio). Comparaison de la carte d’occupation du sol issue de l’enquête Teruti avec une carte construite avec des données de télédétection\nEn Guyane, fonds de carte issus de données Pléiades utilisés pour la collecte\nDiscussion sur la possibilité d’utiliser de l’imagerie satellite pour faciliter l’organisation de l’enquête cartographique en Guyane et à Mayotte"
   },
   {
     "objectID": "src/seminaire-dirag/index.html#une-source-de-données-à-fort-potentiel",
@@ -32,7 +32,7 @@
     "href": "src/seminaire-dirag/index.html#une-source-de-données-à-fort-potentiel-1",
     "title": "Travaux exploratoires avec des données satellites : Bilan des résultats obtenus",
     "section": "Une source de données à fort potentiel",
-    "text": "Une source de données à fort potentiel\n\nPleiades : données très haute résolution. Archives disponibles gratuitement pour l’Insee, et possibilité de faire des commandes (tasking), gratuites sous un certain quota"
+    "text": "Une source de données à fort potentiel\n\nPléiades : données très haute résolution. Archives disponibles gratuitement pour l’Insee, et possibilité de faire des commandes (tasking), gratuites sous un certain quota"
   },
   {
     "objectID": "src/seminaire-dirag/index.html#utilisation-pour-la-statistique-publique",
@@ -53,7 +53,7 @@
     "href": "src/seminaire-dirag/index.html#début-des-travaux",
     "title": "Travaux exploratoires avec des données satellites : Bilan des résultats obtenus",
     "section": "Début des travaux",
-    "text": "Début des travaux\n\nDétection automatique de changements (apparitions, disparitions) sur le bâti dans les DROM (Mayotte)\nAppui pour l’organisation des enquêtes cartographiques :\n\nOn sélectionne les îlots concernés\nOn récupère des données satellites couvrant ces îlots à la date de la précédente enquête cartographique et des données fraiches\nA l’aide de la méthode développée, on repère les ilots avec beaucoup de nouveaux bâtiments, etc."
+    "text": "Début des travaux\n\nDétection automatique de changements (apparitions, disparitions) sur le bâti dans les DROM (Mayotte)\nAppui pour l’organisation des enquêtes cartographiques :\n\nOn sélectionne les îlots concernés\nOn récupère des données satellites couvrant ces îlots à la date de la précédente enquête cartographique et des données fraîches\nA l’aide de la méthode développée, on repère les ilots avec beaucoup de nouveaux bâtiments, etc."
   },
   {
     "objectID": "src/seminaire-dirag/index.html#segmentation-sémantique",
@@ -88,7 +88,7 @@
     "href": "src/seminaire-dirag/index.html#une-image-satellite",
     "title": "Travaux exploratoires avec des données satellites : Bilan des résultats obtenus",
     "section": "Une image satellite",
-    "text": "Une image satellite\n\nUne image satellite peut avoir d’autres couches (ou bandes) que les RGB : infrarouge par exemple.\nLes images satellites contiennent des informations géographiques → chaque pixel a des coordonnées dans l’espace."
+    "text": "Une image satellite\n\nUne image satellite peut avoir d’autres couches (ou bandes) que les RGB : infrarouge par exemple\nLes images satellites contiennent des informations géographiques → chaque pixel a des coordonnées dans l’espace"
   },
   {
     "objectID": "src/seminaire-dirag/index.html#caractéristiques-dune-image-satellite",
@@ -151,7 +151,7 @@
     "href": "src/seminaire-dirag/index.html#la-bdtopo",
     "title": "Travaux exploratoires avec des données satellites : Bilan des résultats obtenus",
     "section": "La BDTOPO",
-    "text": "La BDTOPO\n\nAnnotation d’un bâtiment = un polygone\nElle est construite à partir de plusieurs sources, notamment à partir d’ortho-photos de l’IGN (prises de vue aériennes)\nLes éléments de la BDTOPO produite une année donnée ne sont pas datés précisément\nLa BDTOPO n’est pas synchronisée avec les images PLEIADES que l’INSEE acquiert\nOn retient tout de même la BDTOPO pour annoter les images PLEIADES"
+    "text": "La BDTOPO\n\nAnnotation d’un bâtiment = un polygone\nElle est construite à partir de plusieurs sources, notamment à partir d’ortho-photos de l’IGN (prises de vue aériennes)\nLes éléments de la BDTOPO produite une année donnée ne sont pas datés précisément\nLa BDTOPO n’est pas synchronisée avec les images Pléiades que l’INSEE acquiert\n\nOn la retient tout de même pour annoter les images Pléiades."
   },
   {
     "objectID": "src/seminaire-dirag/index.html#exemple-dannotations-bdtopo",
@@ -319,7 +319,7 @@
     "href": "src/seminaire-dirag/index.html#en-résumé",
     "title": "Travaux exploratoires avec des données satellites : Bilan des résultats obtenus",
     "section": "En résumé",
-    "text": "En résumé\n\n🛠️ Multitudes d’outils à utiliser :\n\nKubernetes, Docker, stockage MinIO, API, ArgoCD, Argo Workflow, MLFlow, React…\n\n… mais dont le coût d’apprentissage est rapidement rentabilisé :\n\nTechnologies “state of the art”\nDe plus en plus utilisées à l’Insee (LS3)"
+    "text": "En résumé\n\n🛠️ Multitude d’outils à utiliser :\n\nKubernetes, Docker, stockage MinIO, API, ArgoCD, Argo Workflow, MLFlow, React…\n\n… mais dont le coût d’apprentissage est rapidement rentabilisé :\n\nTechnologies “state of the art”\nDe plus en plus utilisées à l’Insee (LS3)"
   },
   {
     "objectID": "src/seminaire-dirag/index.html#maintenir-les-travaux",
