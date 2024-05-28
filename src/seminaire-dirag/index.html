@@ -640,9 +640,9 @@
 <div class="columns">
 <div id="vcenter" class="column" style="width:55%;">
 <ul>
-<li>Frontières entre les images</li>
-<li>Délimitations imprécises</li>
-<li>Minuscules polygones</li>
+<li><span class="orange"><strong>Frontières</strong></span> entre les images</li>
+<li><span class="orange"><strong>Délimitations imprécises</strong></span></li>
+<li><span class="orange"><strong>Minuscules polygones</strong></span></li>
 </ul>
 </div><div id="vcenter" class="column" style="width:45%;">
 <div id="fig-pred2023init2" class="quarto-float quarto-figure quarto-figure-center" width="100%">
@@ -663,7 +663,7 @@
 <li>Application d’un <span class="orange"><strong>buffer</strong></span> positif puis négatif
 <ul>
 <li>Propriétés de <span class="blue2"><strong>lissage</strong></span> (arrondis)</li>
-<li>Clôture des petites brèches dans les bâtiments</li>
+<li><span class="blue2"><strong>Clôture des petites brèches</strong></span> dans les bâtiments</li>
 </ul></li>
 </ul>
 
@@ -697,13 +697,13 @@
 <img data-src="../img/predavecbuffer.png" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"></section>
 <section id="evolution-du-bâti" class="slide level2" data-background-image="background.svg" data-background-size="contain">
 <h2>Evolution du bâti</h2>
-<p>Pour estimer l’évolution de la population, on se penche sur l’évolution de la surface construite.</p>
+<p>Pour estimer l’évolution de la population, on se penche sur l’évolution de la <span class="orange"><strong>surface construite</strong></span>.</p>
 <p>Plusieurs approches considérées :</p>
 <ul>
-<li>Créations et suppressions “pures” : aucune intersection avec un bâtiment existant</li>
-<li>Soustraction du bâti de deux années distinctes</li>
+<li>Créations et suppressions <span class="orange"><strong>“pures”</strong></span> : aucune intersection avec un bâtiment existant</li>
+<li><span class="orange"><strong>Soustraction du bâti</strong></span> de deux années distinctes</li>
 </ul>
-<p>C’est la deuxième approche qui est privilégiée car les créations pures peuvent passer à côté de l’étalement d’un quartier.</p>
+<p>C’est la <span class="orange"><strong>deuxième approche</strong></span> qui est privilégiée car les créations pures peuvent passer à côté de l’étalement d’un quartier.</p>
 </section>
 <section id="soustraction-du-bâti" class="slide level2" data-background-image="background.svg" data-background-size="contain">
 <h2>Soustraction du bâti</h2>
@@ -718,12 +718,12 @@
 <p><span class="math display">\[
 \text{Indice de Compacite} = (4 * \pi * \text{Aire}) / (\text{Perimetre} ^2)
 \]</span></p>
-<p>Seuiller les polygones selon cet indice permet de supprimer les plus longilignes.</p>
+<p>Seuiller les polygones selon cet indice permet de <span class="orange"><strong>supprimer les plus longilignes</strong></span>.</p>
 </section>
 <section id="résultat" class="slide level2" data-background-image="background.svg" data-background-size="contain">
 <h2>Résultat</h2>
 
-<img data-src="../img/creationssuppressionsfiltre.png" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"><p>On obtient donc la différence de bâti d’une année à l’autre.</p>
+<img data-src="../img/creationssuppressionsfiltre.png" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"><p>On obtient donc la <span class="orange"><strong>différence de bâti</strong></span> d’une année à l’autre.</p>
 <!-- bien parler des limites, comment interpreter les polygones issus du mod&#xE8;le ? -->
 </section></section>
 <section>
